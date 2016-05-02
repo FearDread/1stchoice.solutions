@@ -1,0 +1,63 @@
+*** Garfunkel Changelog ***
+
+
+Version 1.09 (2016-03-12)
+-------------------------
+- Fixed respond input margins
+
+
+Version 1.08 (2016-03-12)
+-------------------------
+- Removed the wp_title() function from header (replaced with title_tag())
+
+
+Version 1.07 (2015-08-25)
+-------------------------
+- Fixed an issue with overflowing images
+- Added the .screen-reader-text class
+
+
+Version 1.06 (2015-08-20)
+-------------------------
+- Fixed the display of videos on single posts with the video post format
+
+
+Version 1.05 (2015-08-11)
+-------------------------
+- Fixed the display of post excerpts in the quote post format
+
+
+Version 1.04 (2015-08-11)
+-------------------------
+- Actually generated the new Swedish translation (important part)
+
+
+Version 1.03 (2015-08-11)
+-------------------------
+- Replaced custom title function with title-tag support
+- The widgets now use __construct()
+- Fixed missing index notice for widget variables
+- Removed post meta fields from functions.php
+- Removed a shortcode function from functions.php
+- Removed a function used for getting titles from URLs (no longer needed due to changes in format-video/-quote/-link)
+- Added a sanitize callback for custom accent color and custom logo
+- Stored the post meta element as a function in functions.php
+- Modified how the post formats video, quote and link are edited and presented
+- Updated readme.txt to reflect those changes
+- Optimized translation strings
+- Updated the Swedish translation
+- Improved the presentation of the infinite scroll button
+
+
+Version 1.02 (2014-09-26)
+-------------------------
+- Fixed a misplaced the_title() function call that caused links to break in the post meta
+
+
+Version 1.01 (2014-08-25)
+-------------------------
+- Moved enqueue of comment-reply to functions.php
+
+
+Version 1.0 (2014-07-XX)
+-------------------------

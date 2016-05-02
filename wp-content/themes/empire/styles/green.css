@@ -1,0 +1,214 @@
+#wrapper {
+  background-image: url("green/bg.png");
+  border-bottom: 1px solid #a59d57;
+  border-top: 4px solid #645f32;
+}
+
+#footer-wrapper {
+  border-top: 4px solid #568e2d;
+}
+
+#navigation-out {
+  background-color: #476432;
+  border-bottom: 1px solid #373418;
+  border-top: 1px solid #3a3620;
+}
+
+#navigation {
+  background-color: #293a1e;
+}
+
+#navigation .nav li a {
+  border-left: 1px solid #3f3b20;
+  border-right: 1px solid #232113;
+}
+
+.nav a:hover, .nav li.current_page_item a, .nav li.current_page_parent a, .nav li.current-menu-ancestor a, .nav li.current-cat a, .nav li.current-menu-item a, .nav li.sfHover {
+  background-color: #364a27;
+  box-shadow: 0 1px 0 #716a37 inset;
+}
+
+.nav li ul {
+  background-color: #344a27;
+  border-color: #232113;
+}
+
+.nav li ul li a:hover {
+  background-color: #2b3a1e !important;
+}
+
+#search-top form, .searchform {
+  border-color: #222012;
+  box-shadow: 0 5px 4px #3d3b21 inset;
+}
+
+.searchform {
+  background: #364826;
+  border-color: #746e3a;
+}
+
+.searchform input.s {
+  color: #7f7c67;
+}
+
+#search-top input.search-submit {
+  background-color: #2b2916;
+}
+
+#search-top input.search-submit:hover {
+  background-color: #38361c;
+}
+
+.post .post-date {
+  background-color: #2b3a1e;
+  color: #4a6432;
+}
+
+.woo-pagination a:link, .woo-pagination a:visited, .woo-pagination a:active {
+  background: none repeat scroll 0 0 #293a1e;
+  border: 1px solid #706a3c;
+}
+
+.entry img, img.thumbnail, 
+#tabs .inside li img.avatar, #tabs .inside li img.thumbnail,
+#comments .avatar img ,
+ol.portfolio li img, ol.dribbbles li img,
+#loopedSlider.gallery .pagination li img,
+#loopedSlider.gallery .slides img, #gallery img {
+  background-color: #2b3920;
+  border-color: #706c3c;
+}
+
+#tabs ul.wooTabs {
+  background-color: #2a391e;
+  border-color: #1c2714;
+  box-shadow: 0 1px 0 #53743a;
+}
+
+#tabs ul.wooTabs li a.selected, #tabs ul.wooTabs li a:hover, #comments .reply a:hover, .port-cat a:hover {
+  background-color: #222f18;
+}
+
+#post-author, #author-twitter {
+  border-color: #53703c;
+}
+
+#comments .reply a, .port-cat a {
+  background-color: #344826;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.post .title a:link, .post .title a:visited,
+.post .post-comments .comments a,
+.post p.tags,
+.entry blockquote,
+.woo-pagination a:link,
+.woo-pagination a:visited,
+.woo-pagination span.extend, .woo-pagination .page-numbers,
+.woo-pagination .current, .woo-pagination a:hover,
+.page-template-template-team-php p,
+.widget,
+.widget ul li a,
+.widget_woo_twitter ul li .time,
+.widget_woo_twitter p a,
+.widget_woo_archives li a,
+#tabs .inside #tab-tags a,
+#tabs .inside li span.meta,
+#comments h3, #respond h3,
+#comments .comment-head,
+#comments .comment-author,
+#respond label,
+ol.portfolio li span, ol.portfolio li span, ol.dribbbles li em,
+.port-cat a,
+.widget_woo_feedback .btn-next
+{
+  color: #b6d49e;
+  text-shadow: 0 1px 0 #25331a;
+}
+
+#slides .slides_holder {
+  background-color: #29391e;
+  border: 1px solid #517137;
+}
+
+.slide-content.slide-overlay {
+  background-color: rgba(113, 106, 51, 0.6); 
+}
+
+.slide-content .navigation a {
+  color: #646e5c;
+}
+
+#home-widgets .widget h3 {
+  background-color: #29391e;
+  border: 1px solid #1c2714;
+  box-shadow: 0 1px 0 #53743a;
+}
+
+#commentform input.txt, #commentform textarea, #contact-page input.txt, #contact-page textarea {
+  color: #7a8771;
+  background-color: #344826;
+  border-color: #50743a;
+  box-shadow: 0 5px 4px #2e4122 inset;
+}
+
+
+#home-widgets .widget_woo_git ul li span {
+  color: #27341d;
+}
+
+a.button, 
+#commentform #submit,
+.submit,
+a.button:hover, 
+a.button.hover, 
+a.button.active, 
+#commentform #submit:hover,
+.submit:hover {
+	border-color: #53743a;
+	color: #7a8771 !important;
+	background: #354826; 
+}
+
+a.button:hover, 
+a.button.hover, 
+a.button.active, 
+#commentform #submit:hover,
+.submit:hover {
+	opacity:0.8;
+}
+
+#home-widgets .widget h3 span {
+  background: none;
+}
+
+.widget_woo_feedback .btn-next {
+  background-image: url("green/ico-feedback-next.png");
+}
+
+#tabs .fold {
+  background: url("green/tabs-fold.png") no-repeat scroll left top transparent;
+}
+
+#connect {
+  border: 1px solid #1d3a1f;
+}
+
+#main .newsletter-form {
+  border: 1px solid #1d3a1f;
+}
+
+#connect .newsletter-form .email {
+  color: #3b703a;
+}
+
+.widget_woo_subscribe form {
+  background: none repeat scroll 0 0 #142412;
+  border: 1px solid #142412;
+  box-shadow: 0 5px 4px #142412 inset;
+}
+
+#connect .newsletter-form .submit {
+  background-color: #142412;
+}

@@ -1,0 +1,133 @@
+*** Biznizz Changelog ***
+
+2012.03.01 - version 1.5.2
+ * - PLEASE RE-SPECIFY YOUR PAGE SELECTIONS UNDER "HOMEPAGE CONTENT #1" AND "HOMEPAGE CONTENT #2" IN THEME OPTIONS -
+ * /includes/theme-options.php - Added sub-headings to theme options sections. Replaced page selectors in the "Homepage Layout" section with ID-based selectors
+ * index.php - Updated the homepage code to cater for the ID-based page selectors update to the theme options.
+
+2011.11.11 - version 1.5.1
+ * includes/theme-actions.php - fixed Custom Typography output
+
+2011.11.01 - version 1.5
+ * includes/theme-options.php
+   includes/featured.php - added optional slider image URL field
+
+2011.10.28 - version 1.4
+ * style.css - Added Subscribe and Connect
+ * includes/theme-actions.php - Added Subscribe and Connect
+ * includes/theme-functions.php - Added Subscribe and Connect
+ * includes/theme-options.php - Added Subscribe and Connect
+ * includes/theme-widgets.php - Added Subscribe and Connect
+ * includes/widgets/widget-woo-subscribe.php - Added
+ * single.php - Added Subscribe and Connect
+ * images - added social icons
+
+2011.10.24 - version 1.3.2
+ * includes/theme-functions.php - added WP post thumbnail to Slider post type
+
+2011.10.04 - version 1.3.1
+ * style.css - Portfolio page IE7 bugs
+
+2011.10.02 - version 1.3.0
+ * /includes/featured.php - Code consistency checks and added logic for the "slide image ALT text" custom field setting. Converted slide-image to use woo_image() instead of raw img HTML tag.
+ * /includes/theme-options.php - Added "slide image ALT text" field to "slide" entries.
+ * /lang/en_GB.po - Rescanned language file.
+
+2011.09.24 - version 1.2.7
+ * styles.css - IE Slide animation "black border on PNG's" fix
+ * includes/theme-actions.php - Removed window.load from slider activation, to fix "flashing slider" bug for IE.
+
+2011.09.23 - version 1.2.6
+ * style.css - Fixed a slider nav bug for IE7 (position: static)
+ * includes/theme-actions.php - Changed slider to activate on doc.ready, to fix "flashing slider" bug.
+ * includes/js/slides/min.jquery.js - Updated to latest version (1.1.9)
+
+2011.09.19 - version 1.2.5
+ * /includes/featured.php, 
+   index.php - Code cleanup and added "suppress_filters" parameter as false (instead of 0) to the queries for WPML support.
+
+2011.08.31 - version 1.2.4
+ * /includes/widgets/widget-woo-feedback.php - Added a .stop() after each fade animation of the Feedback widget.
+
+2011.08.15 - version 1.2.3
+ * style.css - Fixed feedback widget. Text was being pushed out of the container (line 446). 
+
+2011.08.05 - version 1.2.2
+ * includes/theme-options.php, 
+   includes/theme-actions.php - updated slider speed options
+
+2011.07.18 - version 1.2.1
+ * /includes/theme-js.php - Register SlidesJS script outside of conditional and enqueue inside conditional. For easier inclusion in "Woo - Feedback" widget.
+ * /includes/widgets/widget-woo-feedback.php - Replaced jQuery.innerFade with SlidesJS.
+
+2011.06.30 - version 1.2
+ * /includes/js/portfolio.js - Added hash-based portfolio navigation JavaScript.
+ * template-portfolio.php - changed the link for the tags to include hash tag so it is easier to copy the URL
+
+2011.06.23 - version 1.1.8
+ * /includes/featured.php - Updated code to match code provided by WPML.
+
+2011.05.27 - version 1.1.7
+ * includes/theme-actions.php - exclude JS from validator
+
+2011.05.04 - version 1.1.6
+ * includes/theme-actions.php - Add setting to allow slides to resume after hoverPause.
+
+2011.04.29 - version 1.1.5
+ * includes/theme-actions.php - fixed bug with custom typography
+
+2011.04.13 - version 1.1.4
+ * /includes/theme-options.php - Removed "randomise" option on homepage slider to resolve conflict with slider pagination.
+ * /includes/theme-actions.php - Removed "randomise" logic on homepage slider to resolve conflict with slider pagination.
+
+2011.04.12 - version 1.1.3
+ * includes/featured.php - Added counter and conditional code to test for single slide.
+
+2011.03.23 - version 1.1.2
+ * style.css - Added .post .video (line 285)
+ * single.php - Added video embed to single post
+
+2011.03.19 - version 1.1.1
+ * style.css - Make sure the slider doesn't display all slides in a stack on load (line 221)
+
+2011.03.09 - version 1.1
+ * single-portfolio.php - added single-portfolio.php template
+ * style.css - added styling for portfolio template (lines 269 & 288)
+
+2011.03.01 - version 1.0.10
+ * /includes/theme-actions.php - Fixed autoHeight issue on first slide in the featured slider.
+
+2011.02.25 - version 1.0.9
+ * /includes/widgets/widget-woo-feedback.php - Fixed JavaScript rotator bug in "Woo - Feedback" widget in Internet Explorer 7.
+
+2011.02.14 - version 1.0.8
+ * style.css - Fixed drop-down z-index for IE7
+
+2011.02.10 - version 1.0.7
+ * /includes/theme-actions.php - Added bugfix for autoheight issue on first slide in Google Chrome/Safari.
+
+2011.02.02 - version 1.0.6
+ * style.css - added support for pricing table
+ * styles/all custom styles - added support for pricing table
+
+2011.01.19 - version 1.0.5
+ * template-portfolio.php - Incorrect image size (changed 460px to 450px)
+
+2011.01.12 - version 1.0.4
+ * /includes/theme-actions.php - Fixed bug with slider not loading when slider pagination bar is turned off.
+ 
+2011.01.11 - version 1.0.3
+ * style.css - changed width from 980px to 960px fore better compatibility
+
+2011.01.10 - version 1.0.2
+ * style.css - tweaked styling on .slide-nav
+ * includes/featured.php - added stripslashes to the slider pagination description
+
+2011.01.07 - version 1.0.1
+ * /includes/featured.php - Added support for jCarousel on the slider pagination.
+ * /includes/theme-actions.php - Instantiated jCarousel on the slider pagination.
+ * /includes/theme-js.php - Enqueued the jCarousel JavaScript file.
+ * style.css - Added CSS styles for jCarousel pagination on the homepage slider. (line 241-245)
+	
+2011.01.06 - version 1.0
+ * First release!

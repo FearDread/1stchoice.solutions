@@ -1,0 +1,15 @@
+#header { border-bottom: 1px solid #c1e2df; border-top: 3px solid #4c8f8b; }
+#header-out { background-color: #d0f0ee; }
+#wrapper, #slider-bg-shadow { background-color: #f2f8f8; }
+
+body { color: #869997; }
+a:link, a:visited , .nav a, .slide-content .title, .post .title a:link, .post .title a:visited { color: #22978b; }
+.nav li ul li a:hover, .nav li ul li.current_page_item a, .nav li ul li.current-menu-item a { background: #f1f4f4; }
+.slide-nav { border-color: #5d9a92 }
+
+.nav li ul , .nav li ul li, .searchform, #tabs .inside li, #tabs .inside ul, #tabs ul.wooTabs li a.selected, #tabs ul.wooTabs li a:hover, #tabs #tab-tags, #tabs .inside li img.avatar, #tabs .inside li img.thumbnail, #comments .comment.thread-even, #comments .comment.thread-odd, #comments .comment.bypostauthor, #comments  .avatar img, #comments .reply a, #comments ul.children li, #respond, .slide .video, .entry img, img.thumbnail, .entry .wp-caption, #post-author, #post-author .profile-image , .widget_woo_blogauthorinfo .avatar, .widget_woo_twitter ul li,  .widget_woo_embedwidget .widget-video-unit { border-color: #bfd9d7; }
+
+/* Images */
+.slide-nav li.current { background-image: url(teal/slider-current.png); }
+
+table.pricing .button, table.pricing .button:visited { background: #225F97 url(teal/alert-overlay.png); padding: 8px 25px 8px 25px;}

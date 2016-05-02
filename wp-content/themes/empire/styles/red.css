@@ -1,0 +1,211 @@
+#wrapper {
+  background-image: url("red/bg.png");
+  border-bottom: 1px solid #A5575B;
+  border-top: 4px solid #643232;
+}
+
+#navigation-out {
+  background-color: #643232;
+  border-bottom: 1px solid #371818;
+  border-top: 1px solid #3a2020;
+}
+
+#navigation {
+  background-color: #3a1e1e;
+}
+
+#navigation .nav li a {
+  border-left: 1px solid #3f2020;
+  border-right: 1px solid #231313;
+}
+
+.nav a:hover, .nav li.current_page_item a, .nav li.current_page_parent a, .nav li.current-menu-ancestor a, .nav li.current-cat a, .nav li.current-menu-item a, .nav li.sfHover {
+  background-color: #4a2727;
+  box-shadow: 0 1px 0 #713737 inset;
+}
+
+.nav li ul {
+  background-color: #4a2727;
+  border-color: #231313;
+}
+
+.nav li ul li a:hover {
+  background-color: #3a1e1e !important;
+}
+
+#search-top form, .searchform {
+  border-color: #221212;
+  box-shadow: 0 5px 4px #3d2121 inset;
+}
+
+.searchform {
+  background: #482626;
+  border-color: #743a3a;
+}
+
+.searchform input.s {
+  color: #7f6767;
+}
+
+#search-top input.search-submit {
+  background-color: #2b1616;
+}
+
+#search-top input.search-submit:hover {
+  background-color: #381c1c;
+}
+
+.post .post-date {
+  background-color: #3a1e1e;
+  color: #643232;
+}
+
+.entry img, img.thumbnail, 
+#tabs .inside li img.avatar, #tabs .inside li img.thumbnail,
+#comments .avatar img ,
+ol.portfolio li img, ol.dribbbles li img,
+#loopedSlider.gallery .pagination li img,
+#loopedSlider.gallery .slides img, #gallery img {
+  background-color: #392020;
+  border-color: #703c3c;
+}
+
+.woo-pagination a:link, .woo-pagination a:visited, .woo-pagination a:active {
+  background: none repeat scroll 0 0 #3a1e1e;
+  border: 1px solid #703c3c;
+}
+
+
+#tabs ul.wooTabs {
+  background-color: #391e1e;
+  border-color: #271414;
+  box-shadow: 0 1px 0 #743a3a;
+}
+
+#tabs ul.wooTabs li a.selected, #tabs ul.wooTabs li a:hover, #comments .reply a:hover, .port-cat a:hover {
+  background-color: #2f1818;
+}
+
+#post-author, #author-twitter {
+  border-color: #703c3c;
+}
+
+#comments .reply a, .port-cat a {
+  background-color: #482626;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.post .title a:link, .post .title a:visited,
+.post .post-comments .comments a,
+.post p.tags,
+.entry blockquote,
+.woo-pagination a:link,
+.woo-pagination a:visited,
+.woo-pagination span.extend, .woo-pagination .page-numbers,
+.woo-pagination .current, .woo-pagination a:hover,
+.page-template-template-team-php p,
+.widget,
+.widget ul li a,
+.widget_woo_twitter ul li .time,
+.widget_woo_twitter p a,
+.widget_woo_archives li a,
+#tabs .inside #tab-tags a,
+#tabs .inside li span.meta,
+#comments h3, #respond h3,
+#comments .comment-head,
+#comments .comment-author,
+#respond label,
+ol.portfolio li span, ol.portfolio li span, ol.dribbbles li em,
+.port-cat a,
+.widget_woo_feedback .btn-next
+{
+  color: #d49e9e;
+  text-shadow: 0 1px 0 #331a1a;
+}
+
+#slides .slides_holder {
+  background-color: #391e1e;
+  border: 1px solid #713737;
+}
+
+.slide-content.slide-overlay {
+  background-color: rgba(113, 51, 51, 0.6); 
+}
+
+.slide-content .navigation a {
+  color: #6e5c5c;
+}
+
+#home-widgets .widget h3 {
+  background-color: #391e1e;
+  border: 1px solid #271414;
+  box-shadow: 0 1px 0 #743a3a;
+}
+
+#commentform input.txt, #commentform textarea, #contact-page input.txt, #contact-page textarea {
+  color: #877171;
+  background-color: #482626;
+  border-color: #743a3a;
+  box-shadow: 0 5px 4px #412222 inset;
+}
+
+
+#home-widgets .widget_woo_git ul li span {
+  color: #341d1d;
+}
+
+#home-widgets .widget h3 span {
+  background: none;
+}
+
+.widget_woo_feedback .btn-next {
+  background-image: url("red/ico-feedback-next.png");
+}
+
+#tabs .fold {
+  background: url("red/tabs-fold.png") no-repeat scroll left top transparent;
+}
+
+a.button, 
+#commentform #submit,
+.submit,
+a.button:hover, 
+a.button.hover, 
+a.button.active, 
+#commentform #submit:hover,
+.submit:hover {
+	border-color: #743a3a;
+	color: #877171 !important;
+	background: #482626; 
+}
+
+a.button:hover, 
+a.button.hover, 
+a.button.active, 
+#commentform #submit:hover,
+.submit:hover {
+	opacity:0.8;
+}
+
+#connect {
+  border: 1px solid #3a1d1d;
+}
+
+#main .newsletter-form {
+  border: 1px solid #3a1d1d;
+}
+
+#connect .newsletter-form .email {
+  color: #703a3a;
+}
+
+.widget_woo_subscribe form {
+  background: none repeat scroll 0 0 #241212;
+  border: 1px solid #241212;
+  box-shadow: 0 5px 4px #241212 inset;
+}
+
+#connect .newsletter-form .submit {
+  background-color: #241212;
+}

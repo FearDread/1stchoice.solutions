@@ -1,0 +1,23 @@
+== Change log ==
+
+= 1.2.0 - Apr 24 2016 =
+* Add: Support Custom Logo in WP >= 4.5
+* Check: Compatibility with WP 4.5
+* Fix: Minor bug fixes
+* Update: Minimum required WP 4.3
+
+= 1.2.0 - Apr 21 2016 =
+* Fix : Scroll
+
+= 1.0.6 - Apr 11 2016 =
+* Slider Text Fixed
+* Custom CSS Fixed
+
+= 1.0.5 - Apr 10 2016 =
+* Fix: Front Page Feature Section
+
+= 1.0.4 - Mar 25 2016 =
+* Live in WordPress.org
+
+= 0.0.1 - Nov 11 2015 =
+* Submitted to WordPress.org

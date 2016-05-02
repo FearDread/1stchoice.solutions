@@ -1,0 +1,199 @@
+.jcarousel-container{
+    background:#f2f2f2;
+    border:1px solid #e3e3e3;
+    font-size:12px;
+    padding:15px;
+}
+.jcarousel-direction-rtl{
+	direction:rtl;
+}
+.jcarousel-clip{
+    overflow:hidden;
+}
+.jcarousel-clip-horizontal{
+    width:200px;
+}
+.jcarousel-item-horizontal{
+	margin-left:0;
+    margin-right:10px;
+    overflow:hidden;
+}
+.jcarousel-direction-rtl .jcarousel-item-horizontal{
+	margin-left:10px;
+    margin-right:0;
+}
+.jcarousel-item-placeholder{
+    background:#fff;
+    color:#000;
+}
+/*controls*/
+.jcarousel-control{
+    margin-bottom:10px;
+    margin-top:-10px;
+    text-align:right;
+}
+.jcarousel-control a{
+	background:#b4b4b4;
+    font-size:0;
+    padding:3px;
+    margin:3px;
+    border-radius:10px;
+    box-shadow:1px 1px 1px #e3e3e3;
+}
+.jcarousel-active-control{
+    background:#f26522 !important;
+}
+#author{
+	margin-top:10px;
+	text-align:center;
+}
+.arrow-parent{
+	position:relative;
+}
+.arrow {
+    background: url("../img/icons/arrow.png") no-repeat scroll center bottom transparent;
+    height: 6px;
+    margin-top: -1px;
+    width: 9px;
+    position:absolute;
+    right:50%;
+    z-index:99;
+}
+/*jcarousel2*/
+.slide{clear:both}
+.slide .jcarousel-container{
+	background:none;
+	border:0;
+    font-size:12px;
+    padding:15px;
+}
+.slide .jcarousel-direction-rtl{
+	direction:rtl;
+}
+.slide .jcarousel-clip {
+    overflow:hidden;
+}
+.slide .jcarousel-clip-horizontal{
+    width:930px;
+}
+.slide .jcarousel-item-horizontal{
+	margin-left:0;
+    margin-right:0;
+    overflow:hidden;
+}
+.slide .jcarousel-direction-rtl .jcarousel-item-horizontal{
+	margin-left:10px;
+    margin-right:0;
+}
+.slide .jcarousel-item-placeholder{
+    background:#fff;
+    color:#000;
+}
+.slide .jcarousel-prev{
+	width:68px;
+	height:65px;
+	background:#f26522 url(../img/icons/slider-arrows.png);
+    background-position:top left;
+	position:absolute;
+	top:50%;
+	margin-top:-34px;
+	cursor:pointer;
+}
+.slide .jcarousel-next{
+	width:68px;
+	height:65px;
+	background:#f26522 url(../img/icons/slider-arrows.png);
+    background-position:top right;
+	position:absolute;
+	right:11px;
+	top:50%;
+	margin-top:-34px;
+	cursor:pointer;
+}
+.slide .jcarousel-prev:hover{
+    background-position: bottom left;
+}
+.slide .jcarousel-next:hover{
+    background-position: bottom right;
+}
+.slide img{
+	width:100%;
+}
+#author{
+	margin-top:10px;
+	text-align:center;
+}
+.arrow-parent{
+	position:relative;
+}
+.arrow{
+    background: url("../img/icons/arrow.png") no-repeat scroll center bottom transparent;
+    height: 6px;
+    margin-top: -1px;
+    width: 9px;
+    position:absolute;
+    right:50%;
+    z-index:99;
+}
+/*jcarousel footer*/
+.slide-footer .jcarousel-container{
+    background:none;
+    border:0;
+    font-size:12px;
+    padding:40px 15px 45px 15px;
+    clear:both;
+}
+.slide-footer .jcarousel-direction-rtl{
+    direction:rtl;
+}
+.slide-footer .jcarousel-clip {
+    overflow:hidden;
+}
+.slide-footer .jcarousel-clip-horizontal{
+    width:930px;
+	text-align:center;
+}
+.slide-footer .jcarousel-item-horizontal{
+    margin-left:0;
+    margin-right:0;
+    overflow:hidden;
+}
+
+.slide-footer .jcarousel-direction-rtl .jcarousel-item-horizontal{
+    margin-left:10px;
+    margin-right:0;
+}
+.slide-footer .jcarousel-item-placeholder{
+    background:#fff;
+    color:#000;
+}
+.slide-footer .jcarousel-prev{
+    width:10px;
+    height:10px;
+    background:url(../img/icons/footer-arrow-prev.png) no-repeat;
+    position:absolute;
+    top:50%;
+    margin-top:-5px;
+    cursor:pointer;
+}
+.slide-footer .jcarousel-next{
+    width:10px;
+    height:10px;
+    background:url(../img/icons/footer-arrow-next.png) no-repeat;
+    position:absolute;
+    right:11px;
+    top:50%;
+    margin-top:-5px;
+    cursor:pointer;
+}
+.slide-footer .jcarousel-prev:hover, .slide-footer .jcarousel-next:hover{
+    background-position:bottom center;
+}
+a.gamma {
+    background: url("../img/logos/01.png") no-repeat scroll center top transparent;
+    display: inline-block;
+    height: 45px;
+    transition: all 0.3s ease-out 0s;
+    width: 91px;
+}
+/*jcarousel footer*/

@@ -1,0 +1,1050 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Uniform\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Mon Apr 11 2016 21:29:38 GMT+0545 (Nepal Standard Time)\n"
+"POT-Revision-Date: Mon Apr 11 2016 21:29:47 GMT+0545 (Nepal Standard Time)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../404.php:16
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:38 ../comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:41 ../comments.php:62
+msgid "Older Comments"
+msgstr ""
+
+#: ../comments.php:42 ../comments.php:63
+msgid "Newer Comments"
+msgstr ""
+
+#: ../comments.php:75
+msgid "Comments are closed."
+msgstr ""
+
+#: ../footer.php:21
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: ../functions.php:45
+msgid "Primary Menu"
+msgstr ""
+
+#: ../header.php:23
+msgid "Skip to content"
+msgstr ""
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../sidebar-left.php:22 ../sidebar.php:22
+msgid "Contact Page"
+msgstr ""
+
+#: ../sidebar-left.php:24 ../inc/admin/uniform-sanitize.php:204 ..
+#: /inc/admin/panels/uniform-homepage.php:412
+msgid "Left"
+msgstr ""
+
+#: ../sidebar-left.php:29 ../sidebar.php:28
+msgid "Example Widget"
+msgstr ""
+
+#: ../sidebar-left.php:30 ../sidebar.php:29
+#, php-format
+msgid ""
+"This is an example widget to show how the %s Sidebar looks by default. You "
+"can add custom widgets from the %swidgets screen%s in the admin. If custom "
+"widgets is added than this will be replaced by those widgets."
+msgstr ""
+
+#: ../sidebar.php:24 ../inc/admin/uniform-sanitize.php:205 ..
+#: /inc/admin/panels/uniform-homepage.php:413
+msgid "Right"
+msgstr ""
+
+#: ../inc/customizer.php:22
+msgid "Uniform Demo url "
+msgstr ""
+
+#: ../inc/customizer.php:22 ../inc/customizer.php:23 ../inc/customizer.php:24 ..
+#: /inc/customizer.php:25 ../inc/admin/panels/uniform-homepage.php:544
+msgid " here"
+msgstr ""
+
+#: ../inc/customizer.php:23
+msgid "Theme Documentation "
+msgstr ""
+
+#: ../inc/customizer.php:24
+msgid "Uniform Pro Information "
+msgstr ""
+
+#: ../inc/customizer.php:25
+msgid "Uniform Pro Demo "
+msgstr ""
+
+#: ../inc/customizer.php:30
+msgid "Theme info"
+msgstr ""
+
+#: ../inc/customizer.php:49
+msgid "Demo Url"
+msgstr ""
+
+#: ../inc/customizer.php:70
+msgid "Documentation Url"
+msgstr ""
+
+#: ../inc/customizer.php:91
+msgid "Uniform Pro Info"
+msgstr ""
+
+#: ../inc/customizer.php:112
+msgid "Uniform Pro Demo"
+msgstr ""
+
+#: ../inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:27
+msgid "Older posts"
+msgstr ""
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts"
+msgstr ""
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:89
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: ../inc/template-tags.php:101 ../inc/template-tags.php:135
+msgid "Leave a comment"
+msgstr ""
+
+#: ../inc/template-tags.php:101 ../inc/template-tags.php:135
+msgid "1 Comment"
+msgstr ""
+
+#: ../inc/template-tags.php:101 ../inc/template-tags.php:135
+#, php-format
+msgid "% Comments"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#: ../inc/template-tags.php:105 ../inc/template-tags.php:121 ../inc/template-tags.
+#: php:127
+msgid ", "
+msgstr ""
+
+#: ../inc/template-tags.php:107 ../inc/template-tags.php:123
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:129
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:139 ../template-parts/content-page.php:27 ../template-
+#: parts/content-single.php:38
+msgid "Edit"
+msgstr ""
+
+#: ../inc/template-tags.php:156
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:158
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:160
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:162
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:162
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../inc/template-tags.php:164
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:164
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: ../inc/template-tags.php:166
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:166
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: ../inc/template-tags.php:169
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: ../inc/template-tags.php:171
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: ../inc/template-tags.php:173
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: ../inc/template-tags.php:175
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: ../inc/template-tags.php:177
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: ../inc/template-tags.php:179
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: ../inc/template-tags.php:181
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: ../inc/template-tags.php:183
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: ../inc/template-tags.php:185
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#: ../inc/template-tags.php:188
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: ../inc/template-tags.php:192
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: ../inc/template-tags.php:194
+msgid "Archives"
+msgstr ""
+
+#: ../inc/uniform-functions.php:255
+msgid "Home"
+msgstr ""
+
+#: ../inc/uniform-functions.php:275
+msgid "Archive by category"
+msgstr ""
+
+#: ../inc/uniform-functions.php:277
+msgid "Search results for"
+msgstr ""
+
+#: ../inc/uniform-functions.php:329
+msgid "Posts tagged"
+msgstr ""
+
+#: ../inc/uniform-functions.php:333
+msgid "Articles posted by "
+msgstr ""
+
+#: ../inc/uniform-functions.php:335
+msgid "Error 404 "
+msgstr ""
+
+#: ../inc/uniform-functions.php:341
+msgid "Page"
+msgstr ""
+
+#. $id
+#. $id
+#: ../inc/admin/sidebar-metabox.php:16 ../inc/admin/sidebar-metabox.php:25
+msgid "Select Layout"
+msgstr ""
+
+#: ../inc/admin/sidebar-metabox.php:39
+msgid "Default Layout"
+msgstr ""
+
+#: ../inc/admin/sidebar-metabox.php:44 ../inc/widgets/uniform-widget-area.php:15
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../inc/admin/sidebar-metabox.php:49 ../inc/widgets/uniform-widget-area.php:25
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../inc/admin/sidebar-metabox.php:54
+msgid "No Sidebar Full Width"
+msgstr ""
+
+#: ../inc/admin/uniform-custom-classes.php:22
+msgid "&mdash; Select Category &mdash;"
+msgstr ""
+
+#: ../inc/admin/uniform-custom-classes.php:63
+msgid "--Select Post--"
+msgstr ""
+
+#: ../inc/admin/uniform-custom-classes.php:91
+msgid "&mdash; Select Pages &mdash;"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:30
+msgid "All Posts"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:31
+msgid "Numbers of Posts"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:43
+msgid "One"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:44
+msgid "Two"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:45
+msgid "Three"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:46
+msgid "Four"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:58 ../inc/admin/panels/uniform-general.php:61
+msgid "Wide Layout"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:59 ../inc/admin/panels/uniform-general.php:62
+msgid "Boxed Layout"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:71 ../inc/admin/uniform-sanitize.php:97 ..
+#: /inc/admin/uniform-sanitize.php:123 ../inc/admin/panels/uniform-design.php:202 
+#: ../inc/admin/panels/uniform-homepage.php:75 ../inc/admin/panels/uniform-
+#: homepage.php:100 ../inc/admin/panels/uniform-homepage.php:241 ..
+#: /inc/admin/panels/uniform-homepage.php:517
+msgid "Show"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:72 ../inc/admin/uniform-sanitize.php:98 ..
+#: /inc/admin/uniform-sanitize.php:124 ../inc/admin/panels/uniform-design.php:203 
+#: ../inc/admin/panels/uniform-homepage.php:76 ../inc/admin/panels/uniform-
+#: homepage.php:101 ../inc/admin/panels/uniform-homepage.php:242 ..
+#: /inc/admin/panels/uniform-homepage.php:518
+msgid "Hide"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:84 ../inc/admin/panels/uniform-homepage.php:
+#: 162 ../inc/admin/panels/uniform-homepage.php:279 ../inc/admin/panels/uniform-
+#: homepage.php:450
+msgid "Enable"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:85 ../inc/admin/panels/uniform-homepage.php:
+#: 163 ../inc/admin/panels/uniform-homepage.php:280 ../inc/admin/panels/uniform-
+#: homepage.php:451
+msgid "Disable"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:110 ../inc/admin/panels/uniform-homepage.php:
+#: 124
+msgid "Auto"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:111 ../inc/admin/panels/uniform-homepage.php:
+#: 125
+msgid "Manual"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:164
+msgid "Sticky"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:165
+msgid "Static"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:177
+msgid "Classic"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:178
+msgid "Full width (no sidebar)"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:179
+msgid "Masonry (grid style)"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:192
+msgid "Inline"
+msgstr ""
+
+#: ../inc/admin/uniform-sanitize.php:193
+msgid "Centered (menu and site logo)"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:18
+msgid "Design Settings"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:41
+msgid "Theme color"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:55
+msgid "Archive Sidebar"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:76 ../inc/admin/panels/uniform-design.
+#: php:117 ../inc/admin/panels/uniform-design.php:157
+msgid "Available layouts"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:77
+msgid "Select layout for whole site archives, categories, search page etc."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:96
+msgid "Page Sidebar"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:118
+msgid "Select layout for all pages unless unique layout is set for specific page."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:136
+msgid "Post Sidebar"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:158
+msgid "Select layout for all posts unless unique layout is set for specific page."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:176
+msgid "Breadcrumbs"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:198 ../inc/admin/panels/uniform-
+#: homepage.php:237
+msgid "Section Option"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:199 ../inc/admin/panels/uniform-
+#: homepage.php:238
+msgid "Choose option to show/hide Call to Action section."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:215
+msgid "Custom Design"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-design.php:235
+msgid "Custom css"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-footer.php:18
+msgid "Footer"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-footer.php:28
+msgid "Footer Widget Area"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-footer.php:46
+msgid "Choose Widget Option"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-footer.php:47
+msgid "Choose option to display number of columns in footer area."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-footer.php:50
+msgid "One Column"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-footer.php:51
+msgid "Two Columns"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-footer.php:52
+msgid "Three Columns"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-footer.php:53
+msgid "Four Columns"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-general.php:28
+msgid "General Settings"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-general.php:39
+msgid "Website Layout"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-general.php:40
+msgid "Choose site layout which shows your website more effective."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-general.php:58
+msgid "Site Layout"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:20
+msgid "Header Settings"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:30
+msgid "Top Header Section"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:49
+msgid "Top Header Option"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:50
+msgid "Checked to hide top header section."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:70
+msgid "Top Header Elements"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:71
+msgid ""
+"Add your email address, contact number to display at top header section as "
+"contact info."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:81
+msgid "info@example.com"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:91
+msgid "Top Header Email"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:101
+msgid "167-157-5987"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:111
+msgid "Top Header Contact"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:131
+msgid "Top Header Social Links"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:132
+msgid "Add your social link to display at top header section as social icons."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:143
+msgid "https://facebook.com/"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:154
+msgid "Facebook"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:163
+msgid "https://twitter.com/"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:174
+msgid "Twitter"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:183
+msgid "https://plus.google.com/"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:194
+msgid "Google Plus"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:203
+msgid "https://linkedin.com/"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:214
+msgid "LinkedIn"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:223
+msgid "https://youtube.com/"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:234
+msgid "YouTube"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:243
+msgid "https://vimeo.com/"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:254
+msgid "Vimeo"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:263
+msgid "https://www.pinterest.com/"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:274
+msgid "Pinterest"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:283
+msgid "https://www.instagram.com"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:294
+msgid "Instagram"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:305
+msgid "Header Section"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:326
+msgid "Search Icon Option"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:327
+msgid "Checked to show/add search icon at primary menu section."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:348
+msgid "Sticky Menu Option"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-header.php:349
+msgid "Checked to sticky menu at header while scroll page down."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:18
+msgid "Homepage Settings"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:29
+msgid "Slider Settings"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:49
+msgid "Slider's Category"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:50
+msgid "Select cateogry for Homepage slider"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:71 ../inc/admin/panels/uniform-
+#: homepage.php:96
+msgid "Slider Control"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:72 ../inc/admin/panels/uniform-
+#: homepage.php:97
+msgid "Show/Hide slider controls"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:120
+msgid "Slider Transaction"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:121
+msgid "Choose option about slide's auto/manual transaction at homepage."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:138 ../inc/admin/panels/uniform-
+#: homepage.php:556
+msgid "Service Settings"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:158 ../inc/admin/panels/uniform-
+#: homepage.php:275 ../inc/admin/panels/uniform-homepage.php:446
+msgid "Section Conrol"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:159
+msgid "Enable/Disable option to display Our Service section at home page."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:173
+msgid "Our Services"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:182
+msgid "Service Section Title"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:183
+msgid "Add title for Service section."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:203
+msgid "Service Category"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:204
+msgid "Select cateogry for Homepage's Service section"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:218 ../inc/admin/panels/uniform-
+#: homepage.php:557
+msgid "Call to Action"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:255
+msgid "About/Testimonals"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:276
+msgid "Enable/Disable option to display About/Testimonilas section at home page."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:300
+msgid "About Us"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:301
+msgid "Set the about us section."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:322
+msgid "Select Page"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:323
+msgid "Select page for About section"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:344
+msgid "Testimonials Section"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:345
+msgid "Set the testimoinals section."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:356
+msgid "Testimonials"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:365 ../inc/admin/panels/uniform-
+#: homepage.php:470
+msgid "Section Title"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:366
+msgid "Add title for tesimonials section."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:386
+msgid "Testimonials Category"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:387
+msgid "Select cateogry for testimonials posts."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:408
+msgid "Flip the About Us"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:409
+msgid "Left/Right option to flip the About us section with Testimonials section."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:426 ../inc/admin/panels/uniform-
+#: homepage.php:559
+msgid "Latest Blogs"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:447
+msgid "Enable/Disable option to display latest blog section at home page."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:461
+msgid "Latest News"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:471
+msgid "Add title for latest blog section."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:491
+msgid "Latest Blogs Category"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:492
+msgid "Select cateogry for latest blog posts."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:513
+msgid "Post Meta Conrol"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:514
+msgid "Enable/Disable Post meta in blog section at home page."
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:530
+msgid "Homepage Sections Re-order"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:544
+msgid ""
+"Section Re-order by using Drag and Drop is only available in pro version. "
+"Please visit "
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:552
+msgid "Section Re-order"
+msgstr ""
+
+#: ../inc/admin/panels/uniform-homepage.php:558
+msgid "About/Testimonials"
+msgstr ""
+
+#: ../inc/widgets/uniform-cta.php:21
+msgid "A widget that shows Call to Action."
+msgstr ""
+
+#: ../inc/widgets/uniform-cta.php:34
+msgid "Title"
+msgstr ""
+
+#: ../inc/widgets/uniform-cta.php:39
+msgid "Enter your call to action."
+msgstr ""
+
+#: ../inc/widgets/uniform-cta.php:45
+msgid "Link for the Button"
+msgstr ""
+
+#: ../inc/widgets/uniform-cta.php:50
+msgid "Title for the Button"
+msgstr ""
+
+#: ../inc/widgets/uniform-cta.php:55
+msgid "Display the button inline with the text?"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:17
+msgid "Show widgets at Right sidebar of archive/posts/pages."
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:27
+msgid "Show widgets at Left sidebar of archive/posts/pages."
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:35
+msgid "Home Page: Call to Action"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:37
+msgid "Show widget in Homepage at Call to Action Section."
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:45
+msgid "Footer Sidebar One"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:47
+msgid "Show widgets at footer sidebar one"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:55
+msgid "Footer Sidebar Two"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:57
+msgid "Show widgets at footer sidebar two"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:65
+msgid "Footer Sidebar Three"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:67
+msgid "Show widgets at footer sidebar three"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:75
+msgid "Footer Sidebar Four"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-area.php:77
+msgid "Show widgets at footer sidebar four"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-fields.php:139
+msgid "No file chosen"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-fields.php:142
+msgid "Upload"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-fields.php:144 ../inc/widgets/uniform-widget-
+#: fields.php:153
+msgid "Remove"
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-fields.php:147
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: ../inc/widgets/uniform-widget-fields.php:169
+msgid "View File"
+msgstr ""
+
+#: ../template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../template-parts/content-none.php:20
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../template-parts/content-page.php:20 ../template-parts/content-single.php:32 .
+#: ./template-parts/content.php:42
+msgid "Pages:"
+msgstr ""
+
+#: ../template-parts/content-search.php:25 ../template-parts/section-about.php:32 
+#: ../template-parts/section-blog.php:47 ../template-parts/section-homesider.php:
+#: 44 ../template-parts/section-services.php:38
+msgid "Read More"
+msgstr ""
+
+#. Name of the template
+msgid "Home Page"
+msgstr ""
+
+#. Name of the theme
+msgid "Uniform"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://mysterythemes.com/wp-themes/uniform/"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Uniform is a clean, simple business theme which is fully responsive and "
+"contain mostly used features that helps to setup your site easily and "
+"quickly.Full width and boxed layout, featured slider, featured posts, "
+"services layout, testimonial layout, blog layout, social media integration,"
+"call to action and many other page layouts .Highest level of compatibility "
+"with mostly used WP plugins.Great customer support via email, support forum. "
+"View full Demo here: http://demo.mysterythemes.com/uniform/ | Support: http:"
+"//mysterythemes.com/support/forum/themes/free-themes/"
+msgstr ""
+
+#. Author of the theme
+msgid "Mystery Themes"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://mysterythemes.com/"
+msgstr ""

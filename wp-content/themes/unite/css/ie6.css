@@ -1,0 +1,11 @@
+.nav .sf-sub-indicator { display:none; }
+.nav li a:hover { text-decoration:none; }
+.nav li a.sf-with-ul { padding-right:10px; }
+.button, .button:visited { margin:0; color:#555 !important; font-weight:normal; } .reply a {  color:#555 !important; }
+
+
+#quicklinks { position: absolute; left: 0px; top: 0px; }
+#quicklinks {
+  left: expression( ( 320 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  top: expression( ( 20 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}

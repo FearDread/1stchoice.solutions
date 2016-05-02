@@ -1,0 +1,346 @@
+/*>>>>> Setup and Reset <<<<<*/
+
+body  {
+	color: #2a2a2a;
+	background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6  {
+	color: #2a2a2a;
+}
+
+/*>>>>> Navigation <<<<<*/
+
+a:link, a:visited  {
+	color: #4c3c3c;
+}
+
+#nav li a:link, #nav li a:visited  {
+	color: #fff;
+	background: url(girly/navtile.jpg) repeat-x left bottom;
+}
+
+/* Orange Tab */
+
+#nav li.buynow a:link, #nav li.buynow a:visited  {
+	background: url(girly/navtileorange.jpg) repeat-x left bottom;
+}
+
+#nav li.buynow a:hover  {
+	background: #fff;
+}
+
+#home #nav li.buynow a:hover  {
+	background-color: #e0e4cc;
+}
+
+/* Hover for HomePage tabs */
+
+#home #nav li.current_page_item a:link, #home #nav li.current_page_item a:visited, #home #nav li a:hover  {
+	color: #000;
+	background: #f7fafc;
+}
+
+/* Hover for normal page tabs */
+
+#nav li.current_page_item a:link, #nav li.current_page_item a:visited, #nav li a:hover  {
+	color: #000;
+	background: #fff;
+}
+
+/* Style drop down list */
+
+#home #nav li ul  {
+	background: #f7fafc;
+	border: 1px solid #becdd8;
+}
+
+#home #nav li ul li {
+	background-color: #f7fafc;
+	border-bottom: 1px solid #becdd8;
+}
+
+#nav li ul  {
+	background: #fff;
+	border: 1px solid #b3b3b3;
+}
+
+#nav li ul li {
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+#nav li ul li a:link, #nav li ul li a:visited {
+	color: #2d2d2d;
+	background: none!important;
+}
+
+#nav li ul li a:hover  {
+	background-color: none!important;
+}
+
+/*>>>>> Layout <<<<<*/
+
+#header  {
+	background: url(girly/headerbg.jpg) repeat-x left top;
+}
+
+#featured  {
+	border-top: 1px solid #fff;
+	background-color: #f7fafc;
+}
+
+#featured .inner  {
+	background: url(girly/featuredbg.jpg) no-repeat center top;
+}
+
+#featured #text h2  {
+	color: #000;
+}
+
+#featured #text p  {
+	color: #000;
+}
+
+#featured #text #buttons a.more  {
+	color: #000;
+}
+
+#featured #text #buttons a:hover  {
+	color: #ff2c2b;
+}
+
+#featured #text #buttons a span.left  {
+	background: url(girly/featuredbuttonleft.png) no-repeat left bottom;
+}
+
+#featured #text #buttons a span.middle  {
+	background: url(girly/featuredbuttontile.png) repeat-x left bottom;
+}
+
+#featured #text #buttons a span.right  {
+	background: url(girly/featuredbuttonright.png) no-repeat left bottom;
+}
+
+#main_content  {
+	border-top: 1px solid #fff;
+	background: url(girly/contenttopbg.jpg) repeat-x left top;
+}
+
+#main_content .item img  {
+	border: 1px solid #e2e2e2;
+}
+
+#main_content .item a.more_info  {
+	background: url(girly/morearrow.gif) no-repeat right center;
+}
+
+#breadcrumb  {
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.post  {
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.post h2.title a:link, .post h2.title a:visited  {
+	color: #000;
+}
+
+.post p.meta  {
+	color: #9f9f9f;
+}
+
+.post p.meta a:link, .post p.meta a:visited  {
+	color: #9f9f9f;
+}
+
+.post p.meta a:hover  {
+	color: #057d9f;
+}
+
+.post .post_bottom .readmore a:link, .post .post_bottom .readmore a:visited  {
+	background: url(girly/morearrow.gif) no-repeat right center;
+}
+
+.post .post_bottom .comments a:link, .post .post_bottom .comments a:visited  {
+	color: #3f3f3f;
+	background-color: #eaeaea;
+	border: 1px solid #d4d4d4;
+}
+
+.post .post_bottom .comments a:hover  {
+	background-color: #d4d4d4;
+}
+
+#sidebar h3  {
+	color: #000;
+}
+
+#subscribe ul  {
+	border-top: 1px solid #e2e2e2;
+}
+
+#subscribe ul li  {
+	border-bottom: 1px solid #e2e2e2;
+}
+
+#subscribe ul li a:link, #subscribe ul li a:visited  {
+	color: #2d2d2d;
+}
+
+#subscribe ul li.rss a  {
+	background: url(girly/rss.jpg) no-repeat 5px center;
+}
+
+#subscribe ul li.email a  {
+	background: url(girly/email.jpg) no-repeat 5px center;
+}
+
+.widget ul  {
+	border-top: 1px solid #e2e2e2;
+}
+
+.widget ul li  {
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.widget ul li a:link, .widget ul li a:visited  {
+	color: #2d2d2d;
+	background: url(girly/widgetbullet.gif) no-repeat 5px center;
+}
+
+.widget ul li a:hover  {
+	background-color: #efefef;
+}
+
+#flickr .images  {
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+#search,
+#feedburner,
+#campaignmonitor  {
+	border-bottom: 1px solid #E2E2E2;
+}
+
+#search input.field,
+#feedburner input.field,
+#campaignmonitor input.field  {
+	border: 1px solid #E2E2E2;
+}
+
+#twitter a  {
+	background: none;
+}
+
+/*>>>>> Page Navi <<<<<*/
+
+.pagenavi .on  {
+	background-color: #e7ae9b;
+	color: #fff;
+}
+
+/*>>>>> FOOTER <<<<<*/
+
+#footer  {
+	color: #fff;
+	background: #e7ae9b url(girly/footertopbg.jpg) repeat-x left top;
+}
+
+#footer h3  {
+	color: #fff;
+}
+
+#footer a:link, #footer a:visited  {
+	color: #fff;
+}
+
+#footer #contact  {
+	background: url(girly/contactbg.jpg) repeat-y left top;	
+}
+
+/*>>>>> Comment Styles <<<<<*/
+
+#comments h3.count  {
+	color: #000;
+}
+
+#comments ol li   {
+	border-bottom: 1px solid #e2e2e2;
+}
+
+#comments ol li.alt   {
+	background-color: #efefef;
+}
+
+#comments ol li.bypostauthor .author_id   {
+	color: #fff;
+	background-color: #057d9f;
+}
+
+#comments ol li .comment_meta .gravatar img   {
+	background-color: #fff;
+	border: 1px solid #e2e2e2;
+}
+
+#comments ol li .comment_meta .details span.author  {
+	color: #000;
+}
+
+#comments ol li .comment_meta .details span.author a:link, #comments ol li .comment_meta .details span.author a:visited  {
+	color: #000;
+}
+
+#comments ol li.auth_comment .comment_meta .details span.author a:link, #comments ol li.auth_comment .comment_meta .details span.author a:visited  {
+	color: #057d9f;
+}
+
+#comments ol li .comment_meta .details span.date  {
+	color: #9f9f9f;
+}
+
+#comments ol li .comment_meta .details span.date a:link, #comments ol li .comment_meta .details span.date a:visited  {
+	color: #9f9f9f;
+}
+
+#respond h3  {
+	color: #000;
+}
+
+#respond input, #respond textarea  {
+	border: 1px solid #e2e2e2;
+	background-color: #efefef;
+}
+
+#respond input.submit  {
+	color: #000;
+	background: url(girly/submitbg.jpg) repeat-x left top;
+}
+
+/*>>>>> Post Styles <<<<<*/
+
+.entry blockquote  {
+	color: #666;
+}
+
+/* Post Images */
+
+.entry img  {
+	border: 1px solid #e2e2e2;
+}
+
+.entry .wp-caption img  {
+	border: none;
+}
+
+img.wp-smiley  {
+	border: none;
+}
+
+/*>>>>> Sitemap and Archives Templates <<<<<*/
+
+.block  {
+	border-bottom: 1px solid #e2e2e2;
+}

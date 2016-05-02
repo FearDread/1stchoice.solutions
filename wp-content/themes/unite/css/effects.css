@@ -1,0 +1,388 @@
+/* CSS3 / Browser specific CSS */
+
+/* BORDER RADIUS */
+.nav li ul li a { border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;}
+.post .meta .date, .widget input.s, .widget input.submit, #tip, #contact-page ol.forms li.buttons .submit, #tabs  { border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; }
+#social .inside, #quicklinks, .widget_woo_twitter ul, .nav-entries, .wp-pagenavi, #commentform textarea, #commentform input.txt, #contact-page ol.forms textarea, #contact-page ol.forms input.txt  { border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+#tabs ul.wooTabs li a.selected, #tabs ul.wooTabs li a:hover { border-top-right-radius:3px; border-top-left-radius:3px; -moz-border-radius-topright:3px;	-moz-border-radius-topleft:3px;-webkit-border-top-right-radius: 3px; -webkit-border-top-left-radius:3px; }
+#navigation a  { border-top-right-radius:5px; border-top-left-radius:5px; -moz-border-radius-topright:5px;	-moz-border-radius-topleft:5px;-webkit-border-top-right-radius: 5px; -webkit-border-top-left-radius:5px; }
+#navigation li ul li a { border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;}
+.post .icon a{ border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px; }
+.post .meta ul li.tags a{ border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; }
+
+.gform_wrapper .top_label input.large, .gform_wrapper .top_label select.large, .gform_wrapper .top_label textarea.textarea, .gform_wrapper input { border-bottom-left-radius: 5px 5px; border-bottom-left-radius: 5px 5px; border-bottom-right-radius: 5px 5px; border-bottom-right-radius: 5px 5px; border-top-left-radius: 5px 5px; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; border-top-right-radius: 5px 5px; }
+
+#contact-page ol.forms textarea, 
+
+
+/* BOX SHADOW */
+
+.entry img.wp-smiley  { box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; border-radius:0;-moz-border-radius:0;-webkit-border-radius:0; }
+
+
+/* TEXT SHADOW */
+#sidebar h3, #social li a .url, .widget_woo_twitter li  { text-shadow:0 1px 0 #fff; text-shadow:0 1px 0 rgba(255,255,255,0.5); }
+.nav a:hover, .nav li.current_page_item a, #about, #social li a .site, #wp-calendar a, .widget input.submit { text-shadow:0 1px 0 #000; text-shadow:0 1px 0 rgba(0,0,0,0.5); }
+.post .meta ul li, .post .title, .wp-pagenavi span.pages, #commentsheader h3, .entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6, .widget h3, #sidebar .widget ul li a, .widget_woo_retreattwitter .tweet .username, #footer p  { text-shadow:1px 1px 0 #fff; }
+#logo .site-title { text-shadow: 2px 2px 1px #000; }
+#logo .site-description, .ribbon .search input.field { text-shadow: 1px 1px 1px #000; }
+#navigation a { text-shadow: 1px 1px #111; }
+#navigation li ul li a { text-shadow: none; }
+#respond p, #respond h3, #commentform input.txt, #commentform textarea { text-shadow: 1px 1px 1px #000; }
+#commentform input.txt:focus, #commentform textarea:focus { text-shadow: 1px 1px 1px #fff; }
+
+
+/* BUTTONS */
+
+/* Small button */
+a.but, .meta-but a, .post-more a {
+	display: inline-block;
+	width: 110px;
+	margin-bottom: 10px;
+	padding: 0px 20px;
+	border: 1px solid #c2c2c2;
+	border-bottom-color: #ababab;
+	color: #292929 !important;
+	font-weight: bold; font-size: 12px !important;
+	text-align: center;
+	text-shadow: 0 1px 0 white;
+	text-decoration: none;
+	
+	/*Border radius*/
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	/*Background*/
+	background: #e5e5e5; /*Fallback*/
+	background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(.2, #fafafa),
+					color-stop(1, #e5e5e5)
+				);
+	background: -moz-linear-gradient(
+					center top,
+					#fafafa 20%,
+					#e5e5e5 100%
+				);
+	
+	/*Box shadow*/
+	-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+						inset 0 0 2px hsla(0,100%,100%,.3) /*Shine*/, 
+						0 1px 2px hsla(0, 0%, 0%, .19) /*Shadow*/;
+	-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+					inset 0 0 2px hsla(0,100%,100%,.3) /*Shine*/, 
+					0 1px 2px hsla(0, 0%, 0%, .19) /*Shadow*/;
+	box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+				inset 0 0 2px hsla(0,100%,100%,.3) /*Shine*/, 
+				0 1px 2px hsla(0, 0%, 0%, .19) /*Shadow*/;
+}
+ 
+a.but:hover,
+a.but.hover,
+a.but.active,
+.post-more a:hover,
+.post-more a.hover,
+.post-more a.active,
+.meta-but a:hover,
+.meta-but a.hover,
+.meta-but a.active {
+	/*Background*/
+	background: #dcdcdc; /*Fallback*/
+	background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(.2, #dcdcdc),
+					color-stop(1, #f2f2f2)
+				);
+	background: -moz-linear-gradient(
+					center top,
+					#dcdcdc 20%,
+					#f2f2f2 100%
+				);
+}
+ 
+a.but:active,
+a.but.active,
+.post-more a:active,
+.post-more a.active,
+.meta-but a:active,
+.meta-but a.active {
+	border-color: #b6b6b6;
+	
+	/*Box shadow*/
+	-webkit-box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/,
+						0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	-moz-box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/,
+					0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/,
+				0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+}
+ 
+a.but.inactive,
+.post-more a.inactive,
+.meta-but a.inactive {
+	border: 1px solid #d5d5d5;
+	border-bottom-color: #e6e2e2;
+	color: #aeaeae;
+	text-shadow: 0 1px 0 white;
+	
+	/*Background*/
+	background: #e8e8e8; /*Fallback*/
+	background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(.2, #f3f3f3),
+					color-stop(1, #e6e6e6)
+				);
+	background: -moz-linear-gradient(
+					center top,
+					#f3f3f3 20%,
+					#e6e6e6 100%
+				);
+	
+	/*Box shadow*/
+	-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, 
+						inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 
+						0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, 
+					inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 
+					0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, 
+					inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 
+					0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+}
+
+/* Large button */
+a.but-lrg {
+	display: inline-block;
+	width: 460px;
+	margin-bottom: 10px;
+	padding: 5px 20px;
+	border: 1px solid #c2c2c2;
+	border-bottom-color: #ababab;
+	color: #292929 !important;
+	font-weight: bold; font-size: 13px !important;
+	text-align: center;
+	text-shadow: 0 1px 0 white;
+	text-decoration: none;
+	
+	/*Border radius*/
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	/*Background*/
+	background: #e5e5e5; /*Fallback*/
+	background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(.2, #fafafa),
+					color-stop(1, #e5e5e5)
+				);
+	background: -moz-linear-gradient(
+					center top,
+					#fafafa 20%,
+					#e5e5e5 100%
+				);
+	
+	/*Box shadow*/
+	-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+						inset 0 0 2px hsla(0,100%,100%,.3) /*Shine*/, 
+						0 1px 2px hsla(0, 0%, 0%, .19) /*Shadow*/;
+	-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+					inset 0 0 2px hsla(0,100%,100%,.3) /*Shine*/, 
+					0 1px 2px hsla(0, 0%, 0%, .19) /*Shadow*/;
+	box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+				inset 0 0 2px hsla(0,100%,100%,.3) /*Shine*/, 
+				0 1px 2px hsla(0, 0%, 0%, .19) /*Shadow*/;
+}
+ 
+a.but-lrg:hover,
+a.but-lrg.hover,
+a.but-lrg.active {
+	/*Background*/
+	background: #dcdcdc; /*Fallback*/
+	background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(.2, #dcdcdc),
+					color-stop(1, #f2f2f2)
+				);
+	background: -moz-linear-gradient(
+					center top,
+					#dcdcdc 20%,
+					#f2f2f2 100%
+				);
+}
+ 
+a.but-lrg:active,
+a.but-lrg.active {
+	border-color: #b6b6b6;
+	
+	/*Box shadow*/
+	-webkit-box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/,
+						0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	-moz-box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/,
+					0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/,
+				0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+}
+ 
+a.but-lrg.inactive {
+	border: 1px solid #d5d5d5;
+	border-bottom-color: #e6e2e2;
+	color: #aeaeae;
+	text-shadow: 0 1px 0 white;
+	
+	/*Background*/
+	background: #e8e8e8; /*Fallback*/
+	background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(.2, #f3f3f3),
+					color-stop(1, #e6e6e6)
+				);
+	background: -moz-linear-gradient(
+					center top,
+					#f3f3f3 20%,
+					#e6e6e6 100%
+				);
+	
+	/*Box shadow*/
+	-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, 
+						inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 
+						0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, 
+					inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 
+					0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, 
+					inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 
+					0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+}
+
+
+/* Reply button */
+.reply a {
+	display: inline-block;
+	width: 60px;
+	margin-bottom: 10px;
+	padding: 0px 5px;
+	border: 1px solid #c2c2c2;
+	border-bottom-color: #ababab;
+	color: #292929 !important;
+	font-weight: bold; font-size: 13px !important;
+	text-align: center;
+	text-shadow: 0 1px 0 white;
+	text-decoration: none;
+	
+	/*Border radius*/
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	/*Background*/
+	background: #e5e5e5; /*Fallback*/
+	background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(.2, #fafafa),
+					color-stop(1, #e5e5e5)
+				);
+	background: -moz-linear-gradient(
+					center top,
+					#fafafa 20%,
+					#e5e5e5 100%
+				);
+	
+	/*Box shadow*/
+	-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+						inset 0 0 2px hsla(0,100%,100%,.3) /*Shine*/, 
+						0 1px 2px hsla(0, 0%, 0%, .19) /*Shadow*/;
+	-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+					inset 0 0 2px hsla(0,100%,100%,.3) /*Shine*/, 
+					0 1px 2px hsla(0, 0%, 0%, .19) /*Shadow*/;
+	box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+				inset 0 0 2px hsla(0,100%,100%,.3) /*Shine*/, 
+				0 1px 2px hsla(0, 0%, 0%, .19) /*Shadow*/;
+}
+ 
+.reply a:hover,
+.reply a.hover,
+.reply a.active {
+	/*Background*/
+	background: #dcdcdc; /*Fallback*/
+	background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(.2, #dcdcdc),
+					color-stop(1, #f2f2f2)
+				);
+	background: -moz-linear-gradient(
+					center top,
+					#dcdcdc 20%,
+					#f2f2f2 100%
+				);
+}
+ 
+.reply a:active,
+.reply a.active {
+	border-color: #b6b6b6;
+	
+	/*Box shadow*/
+	-webkit-box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/,
+						0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	-moz-box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/,
+					0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/,
+				0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+}
+ 
+.reply a.inactive {
+	border: 1px solid #d5d5d5;
+	border-bottom-color: #e6e2e2;
+	color: #aeaeae;
+	text-shadow: 0 1px 0 white;
+	
+	/*Background*/
+	background: #e8e8e8; /*Fallback*/
+	background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(.2, #f3f3f3),
+					color-stop(1, #e6e6e6)
+				);
+	background: -moz-linear-gradient(
+					center top,
+					#f3f3f3 20%,
+					#e6e6e6 100%
+				);
+	
+	/*Box shadow*/
+	-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, 
+						inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 
+						0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, 
+					inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 
+					0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, 
+					inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 
+					0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+}
+
+
+/*Submit Button*/
+
+.form-btn, .form-btn:visited { text-shadow: 0 -1px 1px #000; }
+.form-btn, .form-btn:visited { -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25); text-shadow: 0 -1px 1px rgba(0,0,0,0.25); border: 1px solid rgba(0,0,0,.25); border-bottom-color: rgba(0,0,0,.35); }
+.form-btn:hover { opacity:0.9; }

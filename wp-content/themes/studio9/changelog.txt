@@ -1,0 +1,7 @@
+*** Function Changelog ***
+
+2012.11.23 - version 1.0.1
+ * includes/theme-actions.php - Fix invalid function name when child theme active
+	
+2012.11.22 - version 1.0
+ * First release!

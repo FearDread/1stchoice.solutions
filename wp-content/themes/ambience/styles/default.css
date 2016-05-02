@@ -1,0 +1,91 @@
+body {
+	background:#0b1119 url(default/nav-back.jpg) repeat-x top center;
+	font:normal 0.81em Arial, Helvetica, sans-serif; color:#597388;
+}
+
+blockquote {
+	background:#0e131c url(default/blockquote.jpg) no-repeat top left;
+	font:0.92em Arial, Helvetica, sans-serif; color:#646171;
+}
+
+#logo {
+	background:url(default/logo-trans.png) no-repeat top left;
+}
+
+h2 {
+	color:#93a2af;
+}
+
+#main-back {
+	background:url(default/main-back.jpg) no-repeat top center;
+}
+
+.post-meta {
+	background:url(default/post-meta-trans.png) top center;
+	border-bottom:1px solid #202a37;
+}
+	
+	.single-meta {
+		background:url(default/post-meta-trans.png) top center;
+		border-top:1px solid #131b27;
+	}
+	
+#right-col li {
+	background:#141f2e url(default/sidebar-box.jpg) no-repeat top center;
+	border-top:1px solid #27405f;
+	border-right:1px solid #142130;
+	border-bottom:1px solid #0e1620;
+	border-left:1px solid #142130;
+}
+	#right-col li ul li {
+		background:url(default/bullet.gif) no-repeat center left;
+	}
+
+#footer-list {
+	background:url(default/footer-divider.jpg) no-repeat top left;
+}
+
+	#footer-list li {
+		background:url(default/footer-divider.jpg) no-repeat top right;
+	}
+	
+		#footer-list li ul li {
+			background:url(default/bullet.gif) no-repeat center left;
+		}
+
+#footer-columns {
+	background:#0c151e url(default/footer-back.jpg) no-repeat bottom center;
+	border-top:1px solid #121e2c;
+}
+
+#footer-repeat {
+	background:url(default/footer-repeat.jpg) repeat-x bottom center;
+}
+	
+	#footer-copyright {
+		background:url(default/footer-copyright.jpg) no-repeat top center;
+	}
+	
+.post img {
+	border:1px solid #1B2937;
+	padding:8px;
+	background:#141F2E;
+}
+
+.gform_wrapper input,
+.gform_wrapper .top_label input.large,
+.gform_wrapper .top_label select.large,
+.gform_wrapper .top_label textarea.textarea {
+    color: #fff;
+	background:#0e1620;
+	border:1px solid #162232;
+}
+
+.gform_wrapper input.button {
+    border: 0px !important;
+    background: transparent url(default/submit.jpg) no-repeat top left;
+    width: 58px;
+    height: 25px;
+    margin-right: 20px;
+    text-indent:-10000px;
+}

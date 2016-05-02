@@ -1,0 +1,704 @@
+# Copyright (C) 2015 the AcmeThemes
+# This file is distributed under the GNU General Public License v2 or later.
+
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Corporate Plus\n"
+"POT-Creation-Date: 2016-02-06 14:04+0545\n"
+"PO-Revision-Date: 2016-02-06 14:03+0545\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:29
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: acmethemes/core.php:44
+msgid "Primary"
+msgstr ""
+
+#: acmethemes/core/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: acmethemes/core/template-tags.php:34
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr ""
+
+#: acmethemes/core/template-tags.php:51 acmethemes/core/template-tags.php:57
+msgid ", "
+msgstr ""
+
+#: acmethemes/core/template-tags.php:53 acmethemes/core/template-tags.php:59
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: acmethemes/core/template-tags.php:65
+msgid "Leave a comment"
+msgstr ""
+
+#: acmethemes/core/template-tags.php:65
+msgid "1 Comment"
+msgstr ""
+
+#: acmethemes/core/template-tags.php:65
+msgid "% Comments"
+msgstr ""
+
+#: acmethemes/core/template-tags.php:72 template-parts/content-page.php:47
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:14
+#: acmethemes/sidebar-widget/acme-about.php:14
+#: acmethemes/sidebar-widget/acme-col-posts.php:14
+#: acmethemes/sidebar-widget/acme-service.php:14
+msgid "1"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:15
+#: acmethemes/sidebar-widget/acme-about.php:15
+#: acmethemes/sidebar-widget/acme-col-posts.php:15
+#: acmethemes/sidebar-widget/acme-service.php:15
+msgid "2"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:16
+#: acmethemes/sidebar-widget/acme-about.php:16
+#: acmethemes/sidebar-widget/acme-col-posts.php:16
+#: acmethemes/sidebar-widget/acme-service.php:16
+msgid "3"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:34
+msgid "Logo Only ( First Select Logo Above )"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:35
+msgid "Site Title Only"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:36
+msgid "Site Title and Tagline"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:37
+msgid "Disable"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:56
+msgid "Right Sidebar"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:57
+msgid "Left Sidebar"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:58
+msgid "No Sidebar"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:77
+msgid "Left Image"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:78
+msgid "No Image"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:97
+msgid "Do Not Reset"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:98
+msgid "Reset Colors Options"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:99
+msgid "Reset All"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:126
+#: acmethemes/customizer/header-options/header-logo.php:22
+msgid "Logo"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:134
+msgid "&copy; All right reserved 2016"
+msgstr ""
+
+#: acmethemes/customizer/customizer-core.php:143
+#: acmethemes/customizer/options/search.php:7
+msgid "Search"
+msgstr ""
+
+#: acmethemes/customizer/design-options/background-image.php:7
+msgid "Background Image"
+msgstr ""
+
+#: acmethemes/customizer/design-options/blog-layout.php:7
+#: acmethemes/customizer/design-options/blog-layout.php:20
+msgid "Default Blog/Archive Layout"
+msgstr ""
+
+#: acmethemes/customizer/design-options/blog-layout.php:21
+msgid "Image display options"
+msgstr ""
+
+#: acmethemes/customizer/design-options/colors-options.php:7
+msgid "Colors"
+msgstr ""
+
+#: acmethemes/customizer/design-options/colors-options.php:17
+msgid "Primary Color"
+msgstr ""
+
+#: acmethemes/customizer/design-options/custom-css.php:7
+#: acmethemes/customizer/design-options/custom-css.php:19
+msgid "Custom CSS"
+msgstr ""
+
+#: acmethemes/customizer/design-options/design-panel.php:7
+msgid "Layout/Design Option"
+msgstr ""
+
+#: acmethemes/customizer/design-options/sidebar-layout.php:7
+#: acmethemes/customizer/design-options/sidebar-layout.php:20
+msgid "Default Sidebar Layout"
+msgstr ""
+
+#: acmethemes/customizer/design-options/sidebar-layout.php:21
+msgid "Generally home/front page does not have sidebar"
+msgstr ""
+
+#: acmethemes/customizer/feature-section/feature-enable.php:7
+#: acmethemes/customizer/feature-section/feature-enable.php:19
+msgid "Enable Feature Section"
+msgstr ""
+
+#: acmethemes/customizer/feature-section/feature-enable.php:20
+msgid "Feature section will display on front/home page."
+msgstr ""
+
+#: acmethemes/customizer/feature-section/feature-panel.php:7
+msgid "Featured Section Options"
+msgstr ""
+
+#: acmethemes/customizer/feature-section/feature-panel.php:8
+msgid "Customize your awesome site feature section "
+msgstr ""
+
+#: acmethemes/customizer/feature-section/feature-slider.php:7
+msgid "Feature Slider Selection"
+msgstr ""
+
+#: acmethemes/customizer/feature-section/feature-slider.php:18
+msgid "Select Parent Page for Feature Slider"
+msgstr ""
+
+#: acmethemes/customizer/feature-section/feature-slider.php:19
+msgid ""
+"Select parent page and its sub-pages will be shown is slider. Please note "
+"that the slider background image can be set from Header-Options -> Header "
+"Image"
+msgstr ""
+
+#: acmethemes/customizer/feature-section/feature-slider.php:35
+msgid "Number Of Slider"
+msgstr ""
+
+#: acmethemes/customizer/feature-section/feature-slider.php:49
+msgid "Enter Link Url"
+msgstr ""
+
+#: acmethemes/customizer/feature-section/feature-slider.php:50
+msgid "For scroll down, please enter id with hash. For eg: #id-of-section "
+msgstr ""
+
+#: acmethemes/customizer/footer-options/footer-copyright.php:7
+#: acmethemes/customizer/footer-options/footer-copyright.php:18
+msgid "Copyright Text"
+msgstr ""
+
+#: acmethemes/customizer/footer-options/footer-panel.php:7
+msgid "Footer Options"
+msgstr ""
+
+#: acmethemes/customizer/footer-options/footer-panel.php:8
+msgid "Customize your awesome site footer "
+msgstr ""
+
+#: acmethemes/customizer/footer-options/social-options.php:7
+msgid "Social Options"
+msgstr ""
+
+#: acmethemes/customizer/footer-options/social-options.php:18
+msgid "Facebook url"
+msgstr ""
+
+#: acmethemes/customizer/footer-options/social-options.php:32
+msgid "Twitter url"
+msgstr ""
+
+#: acmethemes/customizer/footer-options/social-options.php:46
+msgid "Youtube url"
+msgstr ""
+
+#: acmethemes/customizer/footer-options/social-options.php:60
+msgid "Enable social"
+msgstr ""
+
+#: acmethemes/customizer/header-options/header-logo.php:7
+msgid "Logo Options"
+msgstr ""
+
+#: acmethemes/customizer/header-options/header-logo.php:38
+msgid "Logo Alt Text"
+msgstr ""
+
+#: acmethemes/customizer/header-options/header-logo.php:54
+msgid "Logo/Site Title-Tagline Display Options"
+msgstr ""
+
+#: acmethemes/customizer/header-options/header-panel.php:7
+msgid "Header Options"
+msgstr ""
+
+#: acmethemes/customizer/header-options/header-panel.php:8
+msgid "Customize your awesome site header "
+msgstr ""
+
+#: acmethemes/customizer/header-options/header-panel.php:19
+msgid ""
+"Applied to the slider background image on home/front page and header images "
+"of inner pages."
+msgstr ""
+
+#: acmethemes/customizer/options/breadcrumb.php:7
+msgid "Breadcrumb Options"
+msgstr ""
+
+#: acmethemes/customizer/options/breadcrumb.php:19
+msgid "Enable Breadcrumb"
+msgstr ""
+
+#: acmethemes/customizer/options/options-panel.php:7
+msgid "Theme Options"
+msgstr ""
+
+#: acmethemes/customizer/options/options-panel.php:8
+msgid "Customize your awesome site with theme options "
+msgstr ""
+
+#: acmethemes/customizer/options/options-reset.php:46
+#: acmethemes/customizer/options/options-reset.php:60
+msgid "Reset Options"
+msgstr ""
+
+#: acmethemes/customizer/options/options-reset.php:61
+msgid ""
+"Caution: Reset theme settings according to the given options. Refresh the "
+"page after saving to view the effects. "
+msgstr ""
+
+#: acmethemes/customizer/options/search.php:18
+msgid "Search Placeholder"
+msgstr ""
+
+#: acmethemes/functions.php:34
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: acmethemes/functions.php:37
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: acmethemes/functions.php:45
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: acmethemes/functions.php:47
+msgid "(Edit)"
+msgstr ""
+
+#: acmethemes/functions.php:94
+msgid "Search Results for "
+msgstr ""
+
+#: acmethemes/functions.php:182
+msgid "Posts tagged :"
+msgstr ""
+
+#: acmethemes/functions.php:187
+msgid "Author :"
+msgstr ""
+
+#: acmethemes/functions.php:190
+msgid "Error 404 :"
+msgstr ""
+
+#: acmethemes/functions.php:198
+msgid "Page"
+msgstr ""
+
+#: acmethemes/hooks/comment-forms.php:17
+msgid "Name"
+msgstr ""
+
+#: acmethemes/hooks/comment-forms.php:18
+msgid "Email"
+msgstr ""
+
+#: acmethemes/hooks/comment-forms.php:19
+msgid "Website URL"
+msgstr ""
+
+#: acmethemes/hooks/comment-forms.php:20
+msgid "Comment"
+msgstr ""
+
+#: acmethemes/hooks/comment-forms.php:22
+msgid "Add Comment"
+msgstr ""
+
+#: acmethemes/hooks/comment-forms.php:23
+#, php-format
+msgid "%s Leave a Comment"
+msgstr ""
+
+#: acmethemes/hooks/footer.php:40
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: acmethemes/hooks/footer.php:40
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: acmethemes/hooks/footer.php:42
+#, php-format
+msgid "Theme: %1$s by %2$s"
+msgstr ""
+
+#: acmethemes/hooks/header.php:117
+msgid "Skip to content"
+msgstr ""
+
+#: acmethemes/hooks/slider-selection.php:27
+msgid "Welcome to Corporate Plus"
+msgstr ""
+
+#: acmethemes/hooks/slider-selection.php:30
+msgid ""
+"Really Awesome Theme For Your Business-Corporate House or Personal "
+"Freelancing Sites"
+msgstr ""
+
+#: acmethemes/hooks/slider-selection.php:33
+#: acmethemes/hooks/slider-selection.php:109
+#: acmethemes/sidebar-widget/acme-featured.php:164
+msgid "Know More"
+msgstr ""
+
+#: acmethemes/metabox/metabox.php:16
+msgid "Featured Icon"
+msgstr ""
+
+#: acmethemes/metabox/metabox.php:44
+msgid "Enter Featured Icon"
+msgstr ""
+
+#: acmethemes/metabox/metabox.php:48
+msgid "Featured Icon Used in Widgets"
+msgstr ""
+
+#: acmethemes/metabox/metabox.php:50
+#, php-format
+msgid "%sRefer here%s for icon class. For example: %sfa-desktop%s"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-about.php:17
+#: acmethemes/sidebar-widget/acme-col-posts.php:17
+#: acmethemes/sidebar-widget/acme-service.php:17
+msgid "4"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-about.php:47
+msgid "AT About Section"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-about.php:49
+msgid "Show About Section."
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-about.php:64
+#: acmethemes/sidebar-widget/acme-col-posts.php:71
+#: acmethemes/sidebar-widget/acme-contact.php:41
+#: acmethemes/sidebar-widget/acme-featured.php:43
+#: acmethemes/sidebar-widget/acme-service.php:65
+msgid "Section ID"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-about.php:67
+#: acmethemes/sidebar-widget/acme-col-posts.php:74
+#: acmethemes/sidebar-widget/acme-contact.php:44
+#: acmethemes/sidebar-widget/acme-featured.php:46
+#: acmethemes/sidebar-widget/acme-service.php:68
+msgid ""
+"Enter a Unique Section ID. You can use this ID in Menu item for enabling One "
+"Page Menu."
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-about.php:70
+#: acmethemes/sidebar-widget/acme-col-posts.php:77
+#: acmethemes/sidebar-widget/acme-contact.php:47
+#: acmethemes/sidebar-widget/acme-featured.php:66
+#: acmethemes/sidebar-widget/acme-service.php:71
+msgid "Title"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-about.php:74
+#: acmethemes/sidebar-widget/acme-col-posts.php:81
+#: acmethemes/sidebar-widget/acme-contact.php:51
+#: acmethemes/sidebar-widget/acme-service.php:75
+msgid "Short Description"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-about.php:78
+msgid "Select Parent Page For About"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-about.php:80
+msgid ""
+"Select parent page and its subpages will display in the frontend. If pages "
+"does not have any subpages, then selected single page will display"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-about.php:88
+#: acmethemes/sidebar-widget/acme-service.php:89
+msgid "Select Page"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-about.php:94
+#: acmethemes/sidebar-widget/acme-col-posts.php:106
+#: acmethemes/sidebar-widget/acme-service.php:95
+msgid "Number"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-col-posts.php:54
+msgid "AT Posts Column"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-col-posts.php:56
+msgid "Show recents post or post from category"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-col-posts.php:85
+msgid "Select Category"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-col-posts.php:88
+msgid "From Recent Posts"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-col-posts.php:119
+#: acmethemes/sidebar-widget/acme-featured.php:74
+msgid "Button Link Url"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-col-posts.php:286
+msgid "View More"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-contact.php:25
+msgid "AT Contact Section"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-contact.php:27
+msgid "Show Contact Section."
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-contact.php:55
+msgid "Enter Shortcode"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-contact.php:59
+#, php-format
+msgid "Download contact form 7 from %shere%s"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-featured.php:26
+msgid "AT Featured Section"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-featured.php:28
+msgid "Advanced Featured Section with Parallax Background."
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-featured.php:50
+#: acmethemes/sidebar-widget/acme-featured.php:62
+msgid "Select Background Image"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-featured.php:59
+msgid "Image preview"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-featured.php:62
+msgid "Upload Image"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-featured.php:63
+msgid "Remove Image"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-featured.php:70
+msgid "Description"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-service.php:48
+msgid "AT Service Section"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-service.php:50
+msgid "Show Service Section."
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-service.php:79
+msgid "Select Page For Service"
+msgstr ""
+
+#: acmethemes/sidebar-widget/acme-service.php:81
+msgid ""
+"Select parent page and its subpages will display in the frontend. If page "
+"does not have any subpages, then selected single page will display"
+msgstr ""
+
+#: acmethemes/sidebar-widget/sidebar.php:9
+msgid "Home Main Content Area"
+msgstr ""
+
+#: acmethemes/sidebar-widget/sidebar.php:11
+msgid "Displays widgets on home page main content area."
+msgstr ""
+
+#: acmethemes/sidebar-widget/sidebar.php:18
+msgid "Sidebar"
+msgstr ""
+
+#: comments.php:32
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:41 comments.php:63
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:44 comments.php:66
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:45 comments.php:67
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:79
+msgid "Comments are closed."
+msgstr ""
+
+#: search.php:14
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:22
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:26
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:32
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:36 template-parts/content-single.php:41
+#: template-parts/content.php:46
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:43
+msgid "Read More"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Corporate Plus"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://www.acmethemes.com/themes/corporate-plus"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Corporate Plus is a professional-looking multi-purpose WordPress theme. It "
+"is simple, attractive and responsive theme with lots of theme options which "
+"helps the user to easily customize theme.  Corporate plus theme is also one "
+"page ready theme, you can easily design this theme on one page sites too. It "
+"includes unique slider section, about section, service section, parallax "
+"section, blog section and contact section. This theme is fully widgetized, "
+"so it is easier to operate. The code / setup is easy to customize and extend "
+"by various hooks offered in the build. This is the ideal WordPress theme for "
+"anyone looking to spice-up their site.  Support Forum: http://www.acmethemes."
+"com/supports/  Demo: http://www.acmethemes.com/demo/?theme=corporate-plus"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "acmethemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.acmethemes.com/"
+msgstr ""

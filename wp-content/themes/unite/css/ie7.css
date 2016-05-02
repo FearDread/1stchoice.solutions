@@ -1,0 +1,9 @@
+.nav li a {_height: 0;zoom: 1;} /* IE7 Fix */
+.button, .button:visited {  padding:7px 6px; margin:0; }
+
+.ribbon { position: fixed; top: 0; left: 6%; width: 148px; float: left; }
+
+#respond { right: -30px; }
+#respond h3 { margin-top: 5px; }
+
+.post .meta ul li.comments a {zoom: 1;}

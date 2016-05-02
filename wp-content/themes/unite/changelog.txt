@@ -1,0 +1,77 @@
+*** Unite Changelog ***
+
+2011.06.28 - version 1.3.1
+* /includes/tumblog/wootumblog_postformat.class.php - Added fix for bulk editing of posts
+* /includes/tumblog/theme-custom-post-types.php - Added fix for bulk editing of posts
+
+2011.02.28 - version 1.3.0
+ * /includes/tumblog/* - upgraded tumblog to use post formats
+ * /includes/theme-options.php - upgraded tumblog to use post formats
+ * /includes/theme-js.php - moved mp3 player loading
+ * functions.php - upgraded tumblog to use post formats
+ * archive.php - upgraded tumblog to use post formats
+ * header.php - upgraded tumblog to use post formats
+ * index.php - upgraded tumblog to use post formats
+ * search.php - upgraded tumblog to use post formats
+ * single.php - upgraded tumblog to use post formats
+ * taxonomy.php - upgraded tumblog to use post formats
+ 
+2010.12.15 - version 1.2.7
+ * footer.php - Fixed tooltips legacy code error.
+
+2010.12.07 - version 1.2.6
+ * /includes/theme-functions.php - Fixed empty comment being posted bug.
+
+2010.11.29 - version 1.2.5
+ * /includes/theme-functions.php - fixed empty URL, email, author fields comment bug
+ * /includes/theme-options.php - added icons to theme options
+ 
+2010.09.21 - version 1.2.4
+ * /includes/theme-functions.php - fixed empty URL comment bug
+ * /includes/js/general.js - fixed empty URL comment bug
+ 
+2010.09.20 - version 1.2.3
+ * /includes/theme-functions.php - fixed comments textarea newline bug
+ * /includes/js/general.js - fixed comments textarea newline bug
+ 
+2010.09.18 - version 1.2.2
+ * /includes/theme-tumblog.php - fixed audio tumblog output
+
+2010.09.13 - version 1.2.1
+ * /includes/theme-comments.php - fixed date formatting
+ * /includes/theme-functions.php - fixed date formatting
+ * /includes/theme-tumblog.php - fixed date formatting
+ * /includes/theme-options.php - removed date formatting option, uses wordpress formatting option instead
+ 
+2010.08.18 - version 1.2.0
+ * Framework Update for Tumblog Upgrade function
+ * functions.php - conditional inclusions for upgraded tumblogs
+ * /includes/theme-custom-post-types.php - modified to load only if posts are upgraded
+ 
+2010.08.12 - version 1.1.3
+ * style.css - fixed audio output bug
+ * functions.php - Modified inclusion of custom taxonomies
+ * /includes/theme-tumblog.php - fixed audio output bug
+ * /includes/theme-custom-post-types.php - implemented upgrade function for older tumblogs
+  
+2010.08.10 - version 1.1.2
+ * index.php - changed default output selector from article to default
+ * archive.php - changed default output selector from article to default
+ * search.php - changed default output selector from article to default
+ * single.php - changed default output selector from article to default
+ * taxonomy.php - changed default output selector from article to default
+ * /includes/theme-functions.php - changed default output selector from article to default
+ * /includes/theme-tumblog-rss.php - changed default output selector from article to default
+ * /includes/theme-tumblog.php - added support for post image on default output
+ 
+2010.07.29 - version 1.1.1
+ * style.css - fixed Blog Author widget
+ * /css/effects.css - fixed Blog Author widget
+
+2010.07.29 - version 1.1.0
+ * style.css - Fixed Image dimensions
+ * /includes/theme-options.php - Fixed Image dimensions
+ * /includes/theme-tumblog.php - Fixed Video dimensions
+
+2010.07.29 - version 1.0.0
+ * First release!

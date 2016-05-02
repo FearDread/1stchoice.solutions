@@ -1,0 +1,35 @@
+/* Basic */
+body { background: #A3ABAF url(../images/bg.png); }
+a { color: #B22E2F; text-decoration:none;}
+a:hover { color: #37646F; text-decoration:underline;}
+
+.widget_woo_twitter ul li a { color: #B22E2F; }
+
+/* Header */
+#header-left { background: #355564; }
+#header-right #tagline { background: #355564; }
+
+/* Navigation */ 
+.nav li ul { background: #E1E7E8; border: 1px solid #A3ABAF; }
+.nav a { color: #1B2B32; display: block; }
+#navigation .nav li ul li a { border-bottom: 1px solid #A3ABAF; }
+
+/* Author Sorter */
+#author-sorter ul li a:hover img, #author-sorter ul li.now a img { border: 1px solid #B22E2F; }
+.author-posts .author-post-meta .date { background: #B22E2F; }
+
+/* Sidebar */
+#sidebar { background: #E1E7E8; }
+#sidebar .primary { border-left: 5px solid #A3ABAF; }
+
+.widget ul li a { color: #B22E2F; }
+.widget ul li a:hover { text-decoration: underline; color: #37646F; }
+
+/* Footer */
+#footer-widgets { background: #E1E7E8; border-top: 5px solid #A3ABAF;}
+#footer { background: #355564; }
+#footer a { color: #B22E2F; }
+
+/* Widgets */ 
+#tabs .inside li a { color: #37646F; }
+#tabs .inside li a:hover { color: #37646F; }
