@@ -40,11 +40,13 @@ class Ai1wm_Backups {
 		);
 
 		foreach ( $iterator as $item ) {
-			$backups[] = array(
-				'filename' => $item->getFilename(),
-				'mtime'    => $item->getMTime(),
-				'size'     => $item->getSize(),
-			);
+			if ( $item->isReadable() ) {
+				$backups[] = array(
+					'filename' => $item->getFilename(),
+					'mtime'    => $item->getMTime(),
+					'size'     => $item->getSize(),
+				);
+			}
 		}
 
 		// Sort backups modified date

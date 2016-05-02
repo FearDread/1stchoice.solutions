@@ -53,7 +53,7 @@ class Ai1wm_Updater_Controller {
 	}
 
 	public static function updater() {
-		$extensions = Ai1wm_Updater::get_extensions();
+		$extensions = Ai1wm_Extensions::get();
 
 		// Set uuid
 		$uuid = null;

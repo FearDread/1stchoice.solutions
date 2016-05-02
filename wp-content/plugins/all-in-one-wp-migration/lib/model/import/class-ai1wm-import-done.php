@@ -30,6 +30,33 @@ class Ai1wm_Import_Done {
 		// Set shutdown handler
 		@register_shutdown_function( 'Ai1wm_Import_Done::shutdown' );
 
+		// Check multisite.json file
+		if ( true === is_file( ai1wm_multisite_path( $params ) ) ) {
+
+			// Read multisite.json file
+			$handle = fopen( ai1wm_multisite_path( $params ), 'r' );
+			if ( $handle === false ) {
+				throw new Ai1wm_Import_Exception( __( 'Unable to read multisite.json file', AI1WM_PLUGIN_NAME ) );
+			}
+
+			// Parse multisite.json file
+			$multisite = fread( $handle, filesize( ai1wm_multisite_path( $params ) ) );
+			$multisite = json_decode( $multisite );
+
+			// Close handle
+			fclose( $handle );
+
+			// Activate plugins
+			if ( isset( $multisite->Plugins ) && ( $active_sitewide_plugins = $multisite->Plugins ) ) {
+				activate_plugins( $active_sitewide_plugins, null, is_multisite() );
+			}
+		}
+
+		// Set the new MS files rewriting
+		if ( get_site_option( AI1WM_MS_FILES_REWRITING ) ) {
+			update_site_option( AI1WM_MS_FILES_REWRITING, 0 );
+		}
+
 		// Open the archive file for reading
 		$archive = new Ai1wm_Extractor( ai1wm_archive_path( $params ) );
 

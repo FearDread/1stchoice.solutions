@@ -86,7 +86,7 @@ abstract class Ai1wm_Database {
 	 * @access protected
 	 * @var array
 	 */
-	protected $table_prefix_columns   = array();
+	protected $table_prefix_columns = array();
 
 	/**
 	 * Include table prefixes
@@ -103,6 +103,14 @@ abstract class Ai1wm_Database {
 	 * @var array
 	 */
 	protected $exclude_table_prefixes = array();
+
+	/**
+	 * Number of serialized replaces
+	 *
+	 * @access protected
+	 * @var int
+	 */
+	protected $number_of_replaces = 0;
 
 	/**
 	 * Constructor
@@ -729,14 +737,14 @@ abstract class Ai1wm_Database {
 		$string = '(s:\d+:".*?")';
 		$object = '(O:\d+:".+":\d+:{.*})';
 
-		// Number of replaces
-		$count = 0;
+		// Number of serialized replaces
+		$this->number_of_replaces = 0;
 
 		// Replace serialized values
-		$input = preg_replace_callback( "/'($array|$string|$object)'/", array( $this, 'replace_serialized_values' ), $input, -1, $count );
+		$input = preg_replace_callback( "/'($array|$string|$object)'/", array( $this, 'replace_serialized_values' ), $input );
 
 		// Replace values
-		if ( $count === 0 ) {
+		if ( $this->number_of_replaces === 0 ) {
 			$input = Ai1wm_Database_Utility::replace_values( $old_values, $new_values, $input );
 		}
 
@@ -750,6 +758,8 @@ abstract class Ai1wm_Database {
 	 * @return string
 	 */
 	protected function replace_serialized_values( $matches ) {
+		$this->number_of_replaces++;
+
 		// Unescape MySQL special characters
 		$input = Ai1wm_Database_Utility::unescape_mysql( $matches[1] );
 
@@ -799,7 +809,7 @@ abstract class Ai1wm_Database {
 			"-- Host: %s\n" .
 			"-- Database: %s\n" .
 			"-- Class: %s\n" .
-			"--\n\n",
+			"--\n",
 			$this->wpdb->dbhost,
 			$this->wpdb->dbname,
 			get_class( $this )

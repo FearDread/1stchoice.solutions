@@ -111,6 +111,7 @@ class Ai1wm_Main_Controller {
 	 */
 	public function ai1wm_commands() {
 		// Add export commands
+		add_filter( 'ai1wm_export', 'Ai1wm_Export_Compatibility::execute', 5 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Resolve::execute', 5 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Archive::execute', 10 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Config::execute', 50 );
@@ -122,6 +123,7 @@ class Ai1wm_Main_Controller {
 
 		// Add import commands
 		add_filter( 'ai1wm_import', 'Ai1wm_Import_Upload::execute', 5 );
+		add_filter( 'ai1wm_import', 'Ai1wm_Import_Compatibility::execute', 10 );
 		add_filter( 'ai1wm_import', 'Ai1wm_Import_Resolve::execute', 10 );
 		add_filter( 'ai1wm_import', 'Ai1wm_Import_Validate::execute', 50 );
 		add_filter( 'ai1wm_import', 'Ai1wm_Import_Confirm::execute', 100 );

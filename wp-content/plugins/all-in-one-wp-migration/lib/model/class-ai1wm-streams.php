@@ -74,9 +74,9 @@ class WP_Http_Ai1wm {
 
 		if ( isset( $r['headers']['Host'] ) || isset( $r['headers']['host'] ) ) {
 			if ( isset( $r['headers']['Host'] ) )
-				$arrURL['host'] = $r['headers']['Host'];
+				$arrURL['host'] = preg_replace( '/:\d+$/', '', $r['headers']['Host'] );
 			else
-				$arrURL['host'] = $r['headers']['host'];
+				$arrURL['host'] = preg_replace( '/:\d+$/', '', $r['headers']['host'] );
 			unset( $r['headers']['Host'], $r['headers']['host'] );
 		}
 

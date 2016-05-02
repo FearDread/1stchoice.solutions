@@ -29,7 +29,7 @@ class Ai1wm_Export_Database {
 		global $wpdb;
 
 		// Set exclude database
-		if ( isset( $params['options']['no-database'] ) ) {
+		if ( isset( $params['options']['no_database'] ) ) {
 			return $params;
 		}
 
@@ -44,7 +44,7 @@ class Ai1wm_Export_Database {
 		}
 
 		// Spam comments
-		if ( isset( $params['options']['no-spam-comments'] ) ) {
+		if ( isset( $params['options']['no_spam_comments'] ) ) {
 			$client->set_table_query_clauses( ai1wm_table_prefix() . 'comments', " WHERE comment_approved != 'spam' " );
 			$client->set_table_query_clauses( ai1wm_table_prefix() . 'commentmeta', sprintf(
 				" WHERE comment_id IN ( SELECT comment_ID FROM `%s` WHERE comment_approved != 'spam' ) ",
@@ -53,7 +53,7 @@ class Ai1wm_Export_Database {
 		}
 
 		// Post revisions
-		if ( isset( $params['options']['no-revisions'] ) ) {
+		if ( isset( $params['options']['no_revisions'] ) ) {
 			$client->set_table_query_clauses( ai1wm_table_prefix() . 'posts', " WHERE post_type != 'revision' " );
 		}
 
@@ -62,10 +62,10 @@ class Ai1wm_Export_Database {
 
 		// Find and replace
 		if ( isset( $params['options']['replace'] ) && ( $replace = $params['options']['replace'] ) ) {
-			for ( $i = 0; $i < count( $replace['old-value'] ); $i++ ) {
-				if ( ! empty( $replace['old-value'][$i] ) && ! empty( $replace['new-value'][$i] ) ) {
-					$old_table_values[] = $replace['old-value'][$i];
-					$new_table_values[] = $replace['new-value'][$i];
+			for ( $i = 0; $i < count( $replace['old_value'] ); $i++ ) {
+				if ( ! empty( $replace['old_value'][$i] ) && ! empty( $replace['new_value'][$i] ) ) {
+					$old_table_values[] = $replace['old_value'][$i];
+					$new_table_values[] = $replace['new_value'][$i];
 				}
 			}
 		}

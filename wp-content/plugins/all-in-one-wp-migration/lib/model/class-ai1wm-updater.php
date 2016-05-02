@@ -38,7 +38,7 @@ class Ai1wm_Updater {
 			return $result;
 		}
 
-		$extensions = self::get_extensions();
+		$extensions = Ai1wm_Extensions::get();
 
 		// View details page
 		if ( isset( $args->slug ) && isset( $extensions[ $args->slug ] ) && $action === 'plugin_information' ) {
@@ -62,7 +62,7 @@ class Ai1wm_Updater {
 	 * @return object
 	 */
 	public static function update_plugins( $transient ) {
-		$extensions = self::get_extensions();
+		$extensions = Ai1wm_Extensions::get();
 
 		// Get current updates
 		$updates = get_site_option( AI1WM_UPDATER, array() );
@@ -105,7 +105,7 @@ class Ai1wm_Updater {
 		$updates = get_site_option( AI1WM_UPDATER, array() );
 
 		// Get extension updates
-		foreach ( self::get_extensions() as $slug => $extension ) {
+		foreach ( Ai1wm_Extensions::get() as $slug => $extension ) {
 			$response = wp_remote_get( $extension['about'], array(
 				'timeout' => 15,
 				'headers' => array( 'Accept' => 'application/json' ),
@@ -154,7 +154,7 @@ class Ai1wm_Updater {
 		$modal = 0;
 
 		// Add link for each extension
-		foreach ( self::get_extensions() as $slug => $extension ) {
+		foreach ( Ai1wm_Extensions::get() as $slug => $extension ) {
 			$modal++;
 
 			// Get plugin details
@@ -182,96 +182,5 @@ class Ai1wm_Updater {
 		}
 
 		return $links;
-	}
-
-	/**
-	 * Get extensions for update.
-	 *
-	 * @return array
-	 */
-	public static function get_extensions() {
-		$extensions = array();
-
-		// Add Dropbox Extension
-		if ( defined( 'AI1WMDE_PLUGIN_NAME' ) ) {
-			$extensions[ AI1WMDE_PLUGIN_NAME ] = array(
-				'key'      => AI1WMDE_PLUGIN_KEY,
-				'about'    => AI1WMDE_PLUGIN_ABOUT,
-				'basename' => AI1WMDE_PLUGIN_BASENAME,
-				'version'  => AI1WMDE_VERSION,
-			);
-		}
-
-		// Add Google Drive Extension
-		if ( defined( 'AI1WMGE_PLUGIN_NAME' ) ) {
-			$extensions[ AI1WMGE_PLUGIN_NAME ] = array(
-				'key'      => AI1WMGE_PLUGIN_KEY,
-				'about'    => AI1WMGE_PLUGIN_ABOUT,
-				'basename' => AI1WMGE_PLUGIN_BASENAME,
-				'version'  => AI1WMGE_VERSION,
-			);
-		}
-
-		// Add Amazon S3 extension
-		if ( defined( 'AI1WMSE_PLUGIN_NAME' ) ) {
-			$extensions[ AI1WMSE_PLUGIN_NAME ] = array(
-				'key'      => AI1WMSE_PLUGIN_KEY,
-				'about'    => AI1WMSE_PLUGIN_ABOUT,
-				'basename' => AI1WMSE_PLUGIN_BASENAME,
-				'version'  => AI1WMSE_VERSION,
-			);
-		}
-
-		// Add Multisite Extension
-		if ( defined( 'AI1WMME_PLUGIN_NAME' ) ) {
-			$extensions[ AI1WMME_PLUGIN_NAME ] = array(
-				'key'      => AI1WMME_PLUGIN_KEY,
-				'about'    => AI1WMME_PLUGIN_ABOUT,
-				'basename' => AI1WMME_PLUGIN_BASENAME,
-				'version'  => AI1WMME_VERSION,
-			);
-		}
-
-		// Add Unlimited Extension
-		if ( defined( 'AI1WMUE_PLUGIN_NAME' ) ) {
-			$extensions[ AI1WMUE_PLUGIN_NAME ] = array(
-				'key'      => AI1WMUE_PLUGIN_KEY,
-				'about'    => AI1WMUE_PLUGIN_ABOUT,
-				'basename' => AI1WMUE_PLUGIN_BASENAME,
-				'version'  => AI1WMUE_VERSION,
-			);
-		}
-
-		// Add FTP Extension
-		if ( defined( 'AI1WMFE_PLUGIN_NAME' ) ) {
-			$extensions[ AI1WMFE_PLUGIN_NAME ] = array(
-				'key'      => AI1WMFE_PLUGIN_KEY,
-				'about'    => AI1WMFE_PLUGIN_ABOUT,
-				'basename' => AI1WMFE_PLUGIN_BASENAME,
-				'version'  => AI1WMFE_VERSION,
-			);
-		}
-
-		// Add URL Extension
-		if ( defined( 'AI1WMLE_PLUGIN_NAME' ) ) {
-			$extensions[ AI1WMLE_PLUGIN_NAME ] = array(
-				'key'      => AI1WMLE_PLUGIN_KEY,
-				'about'    => AI1WMLE_PLUGIN_ABOUT,
-				'basename' => AI1WMLE_PLUGIN_BASENAME,
-				'version'  => AI1WMLE_VERSION,
-			);
-		}
-
-		// Add OneDrive Extension
-		if ( defined( 'AI1WMOE_PLUGIN_NAME' ) ) {
-			$extensions[ AI1WMOE_PLUGIN_NAME ] = array(
-				'key'      => AI1WMOE_PLUGIN_KEY,
-				'about'    => AI1WMOE_PLUGIN_ABOUT,
-				'basename' => AI1WMOE_PLUGIN_BASENAME,
-				'version'  => AI1WMOE_VERSION,
-			);
-		}
-
-		return $extensions;
 	}
 }

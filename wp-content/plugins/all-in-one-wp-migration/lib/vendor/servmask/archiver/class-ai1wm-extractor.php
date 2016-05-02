@@ -46,15 +46,17 @@ class Ai1wm_Extractor extends Ai1wm_Archiver {
 	}
 
 	/**
-	 * Get the number of files in an archive
+	 * Get the total files in an archive
 	 *
-	 * @return int Number of files found in the archive
+	 * @return int Total files in the archive
 	 * @throws \Ai1wm_Not_Accesible_Exception
 	 * @throws \Ai1wm_Not_Readable_Exception
 	 */
-	public function get_number_of_files() {
-		// files counter
-		$files_found = 0;
+	public function get_total_files() {
+		fseek( $this->file_handle, SEEK_SET, 0 );
+
+		// total files
+		$total_files = 0;
 
 		while ( $block = $this->read_from_handle( $this->file_handle, 4377, $this->filename ) ) {
 			// end block has been reached
@@ -66,13 +68,45 @@ class Ai1wm_Extractor extends Ai1wm_Archiver {
 			$data = $this->get_data_from_block( $block );
 
 			// we have a file, increment the counter
-			$files_found++;
+			$total_files++;
 
 			// skip file content so we can move forward to the next file
 			$this->set_file_pointer( $this->file_handle, $data['size'], $this->filename );
 		}
 
-		return $files_found;
+		return $total_files;
+	}
+
+	/**
+	 * Get the total size of files in an archive
+	 *
+	 * @return int Total size of files in the archive
+	 * @throws \Ai1wm_Not_Accesible_Exception
+	 * @throws \Ai1wm_Not_Readable_Exception
+	 */
+	public function get_total_size() {
+		fseek( $this->file_handle, SEEK_SET, 0 );
+
+		// total size
+		$total_size = 0;
+
+		while ( $block = $this->read_from_handle( $this->file_handle, 4377, $this->filename ) ) {
+			// end block has been reached
+			if ( $block === $this->eof ) {
+				continue;
+			}
+
+			// get file data from the block
+			$data = $this->get_data_from_block( $block );
+
+			// we have a file, increment the counter
+			$total_size += $data['size'];
+
+			// skip file content so we can move forward to the next file
+			$this->set_file_pointer( $this->file_handle, $data['size'], $this->filename );
+		}
+
+		return $total_size;
 	}
 
 	public function extract_one_file_to( $location, $exclude = array(), $old_paths = array(), $new_paths = array(), $offset = 0, $timeout = 0 ) {
@@ -142,6 +176,8 @@ class Ai1wm_Extractor extends Ai1wm_Archiver {
 	 *
 	 * @param string $location Location where to extract files
 	 * @param array  $files    Files to extract
+	 * @param array  $offset   File offset
+	 * @param int    $timeout  Process timeout
 	 */
 	public function extract_by_files_array( $location, $files = array(), $offset = 0, $timeout = 0 ) {
 		if ( false === is_dir( $location ) ) {

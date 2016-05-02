@@ -11,8 +11,8 @@
 			<span class="ai1wm-query-arrow ai1wm-icon-chevron-right"></span>
 		</p>
 		<div>
-			<input class="ai1wm-query-find-input" type="text" placeholder="<?php _e( 'Find', AI1WM_PLUGIN_NAME ); ?>" name="options[replace][old-value][]" />
-			<input class="ai1wm-query-replace-input" type="text" placeholder="<?php _e( 'Replace with', AI1WM_PLUGIN_NAME ); ?>" name="options[replace][new-value][]" />
+			<input class="ai1wm-query-find-input" type="text" placeholder="<?php _e( 'Find', AI1WM_PLUGIN_NAME ); ?>" name="options[replace][old_value][]" />
+			<input class="ai1wm-query-replace-input" type="text" placeholder="<?php _e( 'Replace with', AI1WM_PLUGIN_NAME ); ?>" name="options[replace][new_value][]" />
 		</div>
 	</li>
 </ul>

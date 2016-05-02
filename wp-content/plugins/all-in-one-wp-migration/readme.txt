@@ -3,7 +3,7 @@ Contributors: yani.iliev, bangelov, pimjitsawang
 Tags: db migration, migration, wordpress migration, db backup, db restore, website backup, website restore, website migration, website deploy, wordpress deploy, db backup, database export, database serialization, database find replace
 Requires at least: 3.3
 Tested up to: 4.5
-Stable tag: 5.40
+Stable tag: 5.41
 License: GPLv2 or later
 
 All-in-One WP Migration is the only tool that you will ever need to migrate a WordPress site.
@@ -75,6 +75,15 @@ All in One WP Plugin is the first plugin to offer true mobile experience on Word
 3. Plugin Menu
 
 == Changelog ==
+= 5.41 =
+* Fix an issue when replacing serialized values on import
+* List files in chunks
+* Convert svg images to png
+* Check if backups are readable before displaying them on "Backups" page
+* Display version incompatibility notification on export/import/restore screen
+* Fix double port issue on Bitnami
+* Fix an issue on multisite export with cloud extensions
+
 = 5.40 =
 * Test plugin up to WordPress 4.5
 

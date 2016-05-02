@@ -33,14 +33,14 @@ class Ai1wm_Import_Enumerate {
 		// Open the archive file for reading
 		$archive = new Ai1wm_Extractor( ai1wm_archive_path( $params ) );
 
-		// Get number of files
-		$total = $archive->get_number_of_files();
+		// Get total files
+		$params['total_files'] = $archive->get_total_files();
+
+		// Get total size
+		$params['total_size'] = $archive->get_total_size();
 
 		// Close the archive file
 		$archive->close();
-
-		// Set total
-		$params['total'] = $total;
 
 		// Set progress
 		Ai1wm_Status::info( __( 'Done retrieving a list of all WordPress files.', AI1WM_PLUGIN_NAME ) );

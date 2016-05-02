@@ -180,6 +180,10 @@ require_once AI1WM_CONTROLLER_PATH .
 
 require_once AI1WM_EXPORT_PATH .
 			DIRECTORY_SEPARATOR .
+			'class-ai1wm-export-compatibility.php';
+
+require_once AI1WM_EXPORT_PATH .
+			DIRECTORY_SEPARATOR .
 			'class-ai1wm-export-resolve.php';
 
 require_once AI1WM_EXPORT_PATH .
@@ -209,6 +213,10 @@ require_once AI1WM_EXPORT_PATH .
 require_once AI1WM_EXPORT_PATH .
 			DIRECTORY_SEPARATOR .
 			'class-ai1wm-export-clean.php';
+
+require_once AI1WM_IMPORT_PATH .
+			DIRECTORY_SEPARATOR .
+			'class-ai1wm-import-compatibility.php';
 
 require_once AI1WM_IMPORT_PATH .
 			DIRECTORY_SEPARATOR .
@@ -253,6 +261,14 @@ require_once AI1WM_IMPORT_PATH .
 require_once AI1WM_MODEL_PATH .
 			DIRECTORY_SEPARATOR .
 			'class-ai1wm-deprecated.php';
+
+require_once AI1WM_MODEL_PATH .
+			DIRECTORY_SEPARATOR .
+			'class-ai1wm-extensions.php';
+
+require_once AI1WM_MODEL_PATH .
+			DIRECTORY_SEPARATOR .
+			'class-ai1wm-compatibility.php';
 
 require_once AI1WM_MODEL_PATH .
 			DIRECTORY_SEPARATOR .

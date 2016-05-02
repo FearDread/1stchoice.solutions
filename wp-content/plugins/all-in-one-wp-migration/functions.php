@@ -516,12 +516,11 @@ function ai1wm_plugin_filters( $filters = array() ) {
 }
 
 /**
- * Get active plugins
+ * Get active ServMask plugins
  *
- * @param  array $plugins List of plugins
  * @return array
  */
-function ai1wm_active_plugins( $plugins = array() ) {
+function ai1wm_active_servmask_plugins( $plugins = array() ) {
 	// WP Migration Plugin
 	if ( defined( 'AI1WM_PLUGIN_BASENAME' ) ) {
 		$plugins[] = AI1WM_PLUGIN_BASENAME;
@@ -568,6 +567,24 @@ function ai1wm_active_plugins( $plugins = array() ) {
 	}
 
 	return $plugins;
+}
+
+/**
+ * Get active sitewide plugins
+ *
+ * @return array
+ */
+function ai1wm_active_sitewide_plugins() {
+	return array_keys( get_site_option( AI1WM_ACTIVE_SITEWIDE_PLUGINS, array(), false ) );
+}
+
+/**
+ * Get active plugins
+ *
+ * @return array
+ */
+function ai1wm_active_plugins() {
+	return array_values( get_option( AI1WM_ACTIVE_PLUGINS, array() ) );
 }
 
 /**

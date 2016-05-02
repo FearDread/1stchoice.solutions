@@ -29,22 +29,29 @@ class Ai1wm_Export_Content {
 
 		// Set content offset
 		if ( isset( $params['content_offset'] ) ) {
-			$content_offset = $params['content_offset'];
+			$content_offset = (int) $params['content_offset'];
 		} else {
 			$content_offset = 0;
 		}
 		// Set filemap offset
 		if ( isset( $params['filemap_offset'] ) ) {
-			$filemap_offset = $params['filemap_offset'];
+			$filemap_offset = (int) $params['filemap_offset'];
 		} else {
 			$filemap_offset = 0;
 		}
 
 		// Get total files
-		if ( isset( $params['total'] ) ) {
-			$total = (int) $params['total'];
+		if ( isset( $params['total_files'] ) ) {
+			$total_files = (int) $params['total_files'];
 		} else {
-			$total = 1;
+			$total_files = 1;
+		}
+
+		// Get total size
+		if ( isset( $params['total_size'] ) ) {
+			$total_size = (int) $params['total_size'];
+		} else {
+			$total_size = 1;
 		}
 
 		// Get processed files
@@ -55,11 +62,11 @@ class Ai1wm_Export_Content {
 		}
 
 		// What percent of files have we processed?
-		$progress = (int) ( ( $processed / $total ) * 100 );
+		$progress = (int) ( ( $processed / $total_size ) * 100 );
 
 		// Set progress
 		if ( empty( $content_offset ) ) {
-			Ai1wm_Status::info( sprintf( __( 'Archiving %d files...<br />%.2f%% complete', AI1WM_PLUGIN_NAME ), $total, $progress ) );
+			Ai1wm_Status::info( sprintf( __( 'Archiving %d files...<br />%d%% complete', AI1WM_PLUGIN_NAME ), $total_files, $progress ) );
 		}
 
 		// Get map file
@@ -84,12 +91,12 @@ class Ai1wm_Export_Content {
 					if ( ( $content_offset = $archive->add_file( WP_CONTENT_DIR . DIRECTORY_SEPARATOR . $path, $path, $content_offset, 3 ) ) ) {
 
 						// Set progress
-						if ( ( $sub_progress = ( $content_offset / $archive->get_current_filesize() ) ) < 1 ) {
-							$progress += $sub_progress;
+						if ( ( $processed += $content_offset ) ) {
+							$progress = (int) ( ( $processed / $total_size ) * 100 );
 						}
 
 						// Set progress
-						Ai1wm_Status::info( sprintf( __( 'Archiving %d files...<br />%.2f%% complete', AI1WM_PLUGIN_NAME ), $total, $progress ) );
+						Ai1wm_Status::info( sprintf( __( 'Archiving %d files...<br />%d%% complete', AI1WM_PLUGIN_NAME ), $total_files, $progress ) );
 
 						// Set content offset
 						$params['content_offset'] = $content_offset;
@@ -116,8 +123,8 @@ class Ai1wm_Export_Content {
 					// Skip bad file permissions
 				}
 
-				// Increment processed files counter
-				$processed++;
+				// Increment processed files
+				$processed += $archive->get_current_filesize();
 
 				// More than 3 seconds have passed, break and do another request
 				if ( ( microtime( true ) - $start ) > 3 ) {

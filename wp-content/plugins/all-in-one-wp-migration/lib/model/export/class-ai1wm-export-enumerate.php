@@ -30,64 +30,101 @@ class Ai1wm_Export_Enumerate {
 		// Set progress
 		Ai1wm_Status::info( __( 'Retrieving a list of all WordPress files...', AI1WM_PLUGIN_NAME ) );
 
-		// Total files
-		$total = 0;
-
-		// Create map file
-		$filemap = fopen( ai1wm_filemap_path( $params ) , 'a+' );
-
 		// Set exclude filters
 		$exclude_filters = ai1wm_content_filters();
 
 		// Exclude themes
-		if ( isset( $params['options']['no-themes'] ) ) {
+		if ( isset( $params['options']['no_themes'] ) ) {
 			$exclude_filters[] = 'themes';
 		}
 
 		// Exclude plugins
-		if ( isset( $params['options']['no-plugins'] ) ) {
+		if ( isset( $params['options']['no_plugins'] ) ) {
 			$exclude_filters = array_merge( $exclude_filters, array( 'plugins', 'mu-plugins' ) );
 		} else {
 			$exclude_filters = array_merge( $exclude_filters, ai1wm_plugin_filters() );
 		}
 
 		// Exclude media
-		if ( isset( $params['options']['no-media'] ) ) {
+		if ( isset( $params['options']['no_media'] ) ) {
 			$exclude_filters[] = 'uploads';
 		}
 
+		// Get total files
+		if ( isset( $params['total_files'] ) ) {
+			$total_files = (int) $params['total_files'];
+		} else {
+			$total_files = 0;
+		}
+
+		// Get total size
+		if ( isset( $params['total_size'] ) ) {
+			$total_size = (int) $params['total_size'];
+		} else {
+			$total_size = 0;
+		}
+
+		// Create map file
+		$filemap = fopen( ai1wm_filemap_path( $params ) , 'a+' );
+
+		// Start time
+		$start = microtime( true );
+
+		// Flag to hold if all files have been processed
+		$completed = true;
+
 		try {
+
 			// Iterate over content directory
-			$iterator = new RecursiveIteratorIterator(
-				new Ai1wm_Recursive_Exclude_Filter(
-					new Ai1wm_Recursive_Directory_Iterator(
-						WP_CONTENT_DIR
-					),
-					$exclude_filters
-				),
-				RecursiveIteratorIterator::SELF_FIRST
-			);
+			$iterator = new Ai1wm_Recursive_Directory_Iterator( WP_CONTENT_DIR );
+
+			// Exclude uploads, plugins or themes
+			$iterator = new Ai1wm_Recursive_Exclude_Filter( $iterator, $exclude_filters );
+
+			// Recursively iterate over content directory
+			$iterator = new RecursiveIteratorIterator( $iterator, RecursiveIteratorIterator::LEAVES_ONLY, RecursiveIteratorIterator::CATCH_GET_CHILD );
+
+			// Limit content directory
+			$iterator = new LimitIterator( $iterator, $total_files );
 
 			// Write path line
 			foreach ( $iterator as $item ) {
 				if ( $item->isFile() ) {
 					if ( fwrite( $filemap, $iterator->getSubPathName() . PHP_EOL ) ) {
-						$total++;
+						$total_files++;
+
+						// Add current file size
+						$total_size += filesize( $iterator->getPathname() );
 					}
 				}
+
+				// More than 3 seconds have passed, break and do another request
+				if ( ( microtime( true ) - $start ) > 3 ) {
+					$completed = false;
+					break;
+				}
 			}
+
 		} catch ( Exception $e ) {
 			// Skip bad file permissions
 		}
 
-		// Close handle
-		fclose( $filemap );
+		// Set progress
+		if ( $completed ) {
+			Ai1wm_Status::info( __( 'Done retrieving a list of all WordPress files.', AI1WM_PLUGIN_NAME ) );
+		}
 
 		// Set total files
-		$params['total'] = $total;
+		$params['total_files'] = $total_files;
 
-		// Set progress
-		Ai1wm_Status::info( __( 'Done retrieving a list of all WordPress files.', AI1WM_PLUGIN_NAME ) );
+		// Set total size
+		$params['total_size'] = $total_size;
+
+		// Set completed flag
+		$params['completed'] = $completed;
+
+		// Close the filemap file
+		fclose( $filemap );
 
 		return $params;
 	}

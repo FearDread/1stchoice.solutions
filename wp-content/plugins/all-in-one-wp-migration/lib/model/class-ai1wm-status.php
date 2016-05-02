@@ -45,6 +45,10 @@ class Ai1wm_Status {
 		self::log( array( 'type' => 'done', 'message' => $message, 'title' => $title ) );
 	}
 
+	public static function blogs( $message, $title = null ) {
+		self::log( array( 'type' => 'blogs', 'message' => $message, 'title' => $title ) );
+	}
+
 	public static function progress( $percent, $title = null ) {
 		self::log( array( 'type' => 'progress', 'percent' => $percent, 'title' => $title ) );
 	}
