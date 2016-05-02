@@ -1,8 +1,0 @@
-/* Style: Purple */
-
-a:link, a:visited, #nav a:hover, .nav li.current_page_item a,
-.post .meta a, #archives .archives_list .comments a, .widget_woo_retreattwitter, .widget_woo_retreattwitter .tweet .username, .widget_woo_retreattwitter .tweet .username a { color: #9937db; }
-
-.post .meta ul li.comments, #archives .archives_list .comments { background: url(purple/ico-bubble.png) no-repeat 0px 7px; }
-
-.ac_results ul li:hover { background: #9937db; }
