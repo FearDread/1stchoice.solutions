@@ -2173,7 +2173,7 @@ function aiosp_google_analytics() {
 	if ( !empty( $aioseop_options['aiosp_ga_advanced_options'] ) && !empty( $aioseop_options['aiosp_ga_exclude_users'] ) ) {
 		if ( is_user_logged_in() ) {
 			global $current_user;
-			if ( empty( $current_user ) ) get_currentuserinfo();
+			if ( empty( $current_user ) ) wp_get_current_user();
 			if ( !empty( $current_user ) ) {
 				$intersect = array_intersect( $aioseop_options['aiosp_ga_exclude_users'], $current_user->roles );
 				if ( !empty( $intersect ) ) return;
