@@ -1,1 +1,0 @@
-<!-- not used in WPtouch 4 -->
