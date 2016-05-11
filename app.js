@@ -16,7 +16,7 @@ routes = require('./routes');
 
 app = express();
 
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '/public/views'));
 app.set('view engine', 'jade');
 
 app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -58,7 +58,7 @@ if (app.get('env') === 'development') {
     app.use(function (err, req, res, next) {
 
         res.status(err.status || 500);
-        res.render('error', {
+        res.render('404', {
             message: err.message,
             error: err
         });
@@ -71,14 +71,12 @@ if (app.get('env') === 'development') {
 app.use(function (err, req, res, next) {
 
     res.status(err.status || 500);
-    res.render('error', {
+    res.render('404', {
         message: err.message,
         error: {}
     });
 
 });
-
-module.exports = app;
 
 var server = app.listen(5000, function () {
     var host, port;
@@ -89,3 +87,5 @@ var server = app.listen(5000, function () {
     console.log('1stchoice solutions listening at http://%s:%s', host, port); 
 
 });
+
+module.exports = app;
