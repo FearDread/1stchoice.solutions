@@ -16,19 +16,32 @@ routes = require('./routes');
 
 app = express();
 
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 app.set('views', path.join(__dirname, '/public/views'));
 app.set('view engine', 'jade');
 
 app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
+
+routes.add(app);
+
+var server = app.listen(5000, function () {
+    var host, port;
+
+    host = server.address().address;
+    port = server.address().port;
+
+    console.log('1stchoice solutions listening at http://%s:%s', host, port); 
+
+});
 
 // Make our db accessible to our router
+/*
 app.use(function (req, res, next) {
 
     //req.db = db;
@@ -36,13 +49,14 @@ app.use(function (req, res, next) {
     next();
 
 });
+*/
 
 // app.use('/', routes);
 // app.use('/users', users);
 
-routes.add(app);
 
 /// catch 404 and forwarding to error handler
+/*
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
 
@@ -53,6 +67,7 @@ app.use(function (req, res, next) {
 });
 
 // development error handler
+/*
 if (app.get('env') === 'development') {
 
     app.use(function (err, req, res, next) {
@@ -77,15 +92,4 @@ app.use(function (err, req, res, next) {
     });
 
 });
-
-var server = app.listen(5000, function () {
-    var host, port;
-
-    host = server.address().address;
-    port = server.address().port;
-
-    console.log('1stchoice solutions listening at http://%s:%s', host, port); 
-
-});
-
-module.exports = app;
+*/
