@@ -11,8 +11,8 @@ var express = require('express'),
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser');
 
-routes = require('./routes/index');
-users = require('./routes/users');
+routes = require('./routes');
+//users = require('./routes/users');
 
 app = express();
 
@@ -31,14 +31,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Make our db accessible to our router
 app.use(function (req, res, next) {
 
-    req.db = db;
+    //req.db = db;
 
     next();
 
 });
 
-app.use('/', routes);
+// app.use('/', routes);
 // app.use('/users', users);
+
+routes.add(app);
 
 /// catch 404 and forwarding to error handler
 app.use(function (req, res, next) {
@@ -77,3 +79,13 @@ app.use(function (err, req, res, next) {
 });
 
 module.exports = app;
+
+var server = app.listen(5000, function () {
+    var host, port;
+
+    host = server.address().address;
+    port = server.address().port;
+
+    console.log('1stchoice solutions listening at http://%s:%s', host, port); 
+
+});
