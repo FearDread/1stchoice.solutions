@@ -2,476 +2,472 @@
 header
   // Begin Top Bar
   .top-bar
-	.container
-	  .row
-		// Address and Phone
-		.col-sm-7.hidden-xs
-		  span.ion-android-system-home.home-icon
-		  | 1st Choice Solutions, Las Vegas, 89102 USA
-		  span.ion-ios7-telephone.phone-icon
-		  | 1702983921
-		// Social Buttons
-		.col-sm-5.text-right
-		  ul.topbar-list.list-inline
-			li
-			  a.btn.btn-social-icon.btn-rw.btn-primary.btn-xs
-				i.fa.fa-twitter
-			  a.btn.btn-social-icon.btn-rw.btn-primary.btn-xs
-				i.fa.fa-instagram
-			  a.btn.btn-social-icon.btn-rw.btn-primary.btn-xs
-				i.fa.fa-facebook
-			li
-			  a(data-toggle='modal', data-target='#login') Login
-			li
-			  a(href='pages-forms-register-login.html') Register
-	  // /row
-	// /container header
-  // /top bar
-  // End Top Bar
-  // Login
+    .container
+      .row
+        // Address and Phone
+        .col-sm-7.hidden-xs
+          span.ion-android-system-home.home-icon
+          | 1st Choice Solutions, Las Vegas, 89102 USA
+          span.ion-ios7-telephone.phone-icon
+          | 1702983921
+        // Social Buttons
+        .col-sm-5.text-right
+          ul.topbar-list.list-inline
+            li
+              a.btn.btn-social-icon.btn-rw.btn-primary.btn-xs
+                i.fa.fa-twitter
+              a.btn.btn-social-icon.btn-rw.btn-primary.btn-xs
+                i.fa.fa-instagram
+              a.btn.btn-social-icon.btn-rw.btn-primary.btn-xs
+                i.fa.fa-facebook
+            li
+              a(data-toggle='modal', data-target='#login') Login
+            li
+              a(href='pages-forms-register-login.html') Register
+
   #login.modal.fade(tabindex='-1', role='dialog', aria-labelledby='loginLabel', aria-hidden='true')
-	.modal-dialog.modal-sm
-	  .modal-content
-		.modal-header
-		  button.close(type='button', data-dismiss='modal')
-			span(aria-hidden='true') ×
-			span.sr-only Close
-		  h4#loginLabel.modal-title Login
-		.modal-body
-		  form(role='form')
-			.form-group
-			  label(for='exampleInputEmail1') Email address
-			  input#exampleInputEmail1.form-control(type='email', placeholder='Enter email')
-			.form-group
-			  label(for='exampleInputPassword1') Password
-			  input#exampleInputPassword1.form-control(type='password', placeholder='Password')
-			.checkbox
-			  label
-				input(type='checkbox')
-				|  Do you flex?
-		  // /form
-		.modal-footer
-		  button.btn.btn-rw.btn-primary(type='button') Login
-	  // /modal content
-	// /modal dialog
+    .modal-dialog.modal-sm
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal')
+            span(aria-hidden='true') ×
+            span.sr-only Close
+          h4#loginLabel.modal-title Login
+        .modal-body
+          form(role='form')
+            .form-group
+              label(for='exampleInputEmail1') Email address
+              input#exampleInputEmail1.form-control(type='email', placeholder='Enter email')
+            .form-group
+              label(for='exampleInputPassword1') Password
+              input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+            .checkbox
+              label
+                input(type='checkbox')
+                |  Do you flex?
+          // /form
+        .modal-footer
+          button.btn.btn-rw.btn-primary(type='button') Login
+      // /modal content
+    // /modal dialog
   // /modal holder
   // End Login
   // Begin Navigation
   .navbar-wrapper
-	#fixed-navbar.navbar.navbar-main
-	  .container
-		.row
-		  .col-sm-12.column-header
-			.navbar-header
-			  // Brand
-			  a.navbar-brand(href='index.html')
-				.css-logo
-				img.raleway-logo(src='images/logo.png', alt='Raleway Responsive Parallax Bootstrap 3 Template')
-			  // Mobile Navigation
-			  button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navHeaderCollapse')
-				span.sr-only Toggle navigation
-				span.icon-bar
-				span.icon-bar
-				span.icon-bar
-			// /navbar header
-			// Main Navigation - Explained in Documentation
-			nav.navbar-collapse.collapse.navHeaderCollapse(role='navigation')
-			  ul.nav.navbar-nav.navbar-right
-				li.dropdown.dropdown-main
-				  a.dropdown-toggle(href='index.html', data-hover='dropdown', data-toggle='dropdown')
-					| Home
-					span.fa.fa-angle-down.dropdown-arrow
-				  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
-					// Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
-					li
-					  a(href='index.html') Option 1: Home
-					li
-					  a(href='index-home.html') Option 2: aHome
-					li
-					  a(href='index-home-b.html') Option 3: bHome
-					li
-					  a(href='index-carousel-subnav.html') Option 4: Carousel Subnav
-					li
-					  a(href='shop-home-revolution-slider.html') Option 5: Shop Home 1
-					li
-					  a(href='shop-home-bootstrap-slider.html') Option 6: Shop Home 2
-					li
-					  a(href='features-navigation-options.html') Navigation Options
-					li.dropdown.dropdown-submenu
-					  a.trigger Footer Options
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='features-footer-options.html') Dark
-						li
-						  a(tabindex='-1', href='features-footer-options-2.html') Light
-				li.dropdown.mega-dropdown.dropdown-main
-				  a.dropdown-toggle(href='#', data-toggle='dropdown')
-					| Pages
-					span.fa.fa-angle-down.dropdown-arrow
-				  ul.dropdown-menu.dropdown-subhover.mega-dropdown-menu.row.dropdown-animation.animated.fadeIn
-					// Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
-					li.col-lg-4.hidden-md.hidden-sm.hidden-xs
-					  ul
-						li.dropdown-header New in Stores
-						li
-						  img.img-responsive.screen-img.mt10(src='screen.png')
-					li.col-lg-2.col-md-3.col-sm-6
-					  ul
-						li.dropdown-header Inform
-						li
-						  a(href='pages-about-us-1.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  About Page 1
-						li
-						  a(href='pages-about-us-2.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  About Page 2
-						li
-						  a(href='pages-about-us-team.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  About us & Team
-						li
-						  a(href='pages-team-1.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  The Team 1
-						li
-						  a(href='pages-team-2.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  The Team 2
-						li
-						  a(href='pages-pricing.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Our Pricing
-					li.col-lg-2.col-md-3.col-sm-6.mt15-xs
-					  ul
-						li.dropdown-header Common
-						li
-						  a(href='pages-services-1.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Service Option 1
-						li
-						  a(href='pages-services-2.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Service Option 2
-						li
-						  a(href='pages-404-default.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  404 Default
-						li
-						  a(href='pages-404-fullscreen.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  404 Fullscreen
-						li
-						  a(href='pages-forms-register-login.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Register & Login
-						li
-						  a(href='pages-faq.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Common Questions
-					li.col-lg-2.col-md-3.col-sm-6.mt15-xs.mt15-sm
-					  ul
-						li.dropdown-header
-						  | More 
-						  span.ion-plus
-						li
-						  a(href='pages-sidebar-right.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Page w/ Sidebar Right
-						li
-						  a(href='pages-sidebar-left.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Page w/ Sidebar Left
-						li
-						  a(href='pages-menu-right.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Page w/ Menu Right
-						li
-						  a(href='pages-menu-left.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Page w/ Menu Left
-						li
-						  a(href='pages-404-default-image.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  404 Default Image
-						li
-						  a(href='features-navigation-options.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Navigation Options
-					li.col-lg-2.col-md-3.col-sm-6.mt15-xs.mt15-sm
-					  ul
-						li.dropdown-header
-						  | More 
-						  span.ion-plus
-						li
-						  a(href='pages-contact-1.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Contact Page 1
-						li
-						  a(href='pages-contact-2.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Contact Page 2
-						li
-						  a(href='pages-timeline.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Company Timeline
-						li
-						  a(href='pages-user-profile-1.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  User Profile
-						li
-						  a(href='pages-user-profile-2.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  User Profile 2
-						li
-						  a(href='pages-freebies.html')
-							span.fa.fa-angle-right.mega-dropdown-arrow
-							|  Freebies
-				li.dropdown.dropdown-main
-				  a.dropdown-toggle(href='#', data-toggle='dropdown')
-					| Features
-					span.fa.fa-angle-down.dropdown-arrow
-				  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
-					// Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
-					li.dropdown.dropdown-submenu
-					  a.trigger
-						strong Components
-					  ul.dropdown-menu.animated.fadeInRight.dropdown-animation
-						li
-						  a(tabindex='-1', href='features-alerts.html') Alerts
-						li
-						  a(tabindex='-1', href='features-tabs-accordions.html') Tabs & Accordions
-						li
-						  a(tabindex='-1', href='features-lists.html') Lists
-						li
-						  a(tabindex='-1', href='features-thumbnails.html') Thumbnails
-						li
-						  a(tabindex='-1', href='features-tables.html') Tables
-						li
-						  a(tabindex='-1', href='features-dividers.html') Dividers
-						li
-						  a(tabindex='-1', href='features-headings.html') Headings
-						li
-						  a(tabindex='-1', href='features-progress-bars.html') Progress Bars
-						li
-						  a(tabindex='-1', href='features-modals.html') Modals
-						li
-						  a(tabindex='-1', href='features-tooltips-popovers.html') Tooltips & Popovers
-						li
-						  a(tabindex='-1', href='features-labels-badges.html') Labels & Badges
-						li
-						  a(tabindex='-1', href='features-forms.html') Forms
-						li
-						  a(tabindex='-1', href='features-panels.html') Panels
-					li
-					  a(href='features-typography.html') Typography
-					li.dropdown.dropdown-submenu
-					  a.trigger Icons
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='features-icons-fontawesome.html') FontAwesome
-						li
-						  a(tabindex='-1', href='features-icons-ionicons.html') Ionicons
-						li
-						  a(tabindex='-1', href='features-icons-glyphicons.html') Glyphicons
-						li
-						  a(tabindex='-1', href='features-icons-raleway.html') Raleway
-					li.dropdown.dropdown-submenu
-					  a.trigger Buttons
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='features-buttons-basic.html') Basic
-						li
-						  a(tabindex='-1', href='features-buttons-social.html') Social
-						li
-						  a(tabindex='-1', href='features-buttons-library.html') Library
-					li
-					  a(href='features-animations.html') Animations
-					li
-					  a(href='features-sliders-bootstrap.html') Bootstrap Carousel
-					li.dropdown.dropdown-submenu
-					  a.trigger Content Boxes
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='features-content-boxes-icon-big.html') Icon Big
-						li
-						  a(tabindex='-1', href='features-content-boxes-icon-small.html') Icon Small
-						li
-						  a(tabindex='-1', href='features-content-boxes-icon-left.html') Icon Left Aligned
-						li
-						  a(tabindex='-1', href='features-content-boxes.html') Boxes
-					li.dropdown.dropdown-submenu
-					  a.trigger Extras
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='features-recent-projects.html') Recent Projects
-						li
-						  a(tabindex='-1', href='features-image-video-zoom.html') Image & Video Zoom
-						li
-						  a(tabindex='-1', href='features-pricing-tables.html') Pricing Tables
-						li
-						  a(tabindex='-1', href='features-calltoactions.html') Call to Action
-					li.dropdown.dropdown-submenu
-					  a.trigger Subheader Options
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='features-header-1.html') Default
-						li
-						  a(tabindex='-1', href='features-header-2.html') Option 2
-						li
-						  a(tabindex='-1', href='features-header-3.html') Option 3
-						li
-						  a(tabindex='-1', href='features-header-parallax.html') Parallax
-					li.dropdown.dropdown-submenu
-					  a.trigger Team Member Options
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='features-team-members-1.html') Option 1
-						li
-						  a(tabindex='-1', href='features-team-members-2.html') Option 2
-					li
-					  a(href='features-parallax.html') Parallax
-					li
-					  a(href='features-columns.html') Columns
-				li.dropdown.dropdown-main
-				  a.dropdown-toggle(href='#', data-toggle='dropdown')
-					| Portfolio
-					span.fa.fa-angle-down.dropdown-arrow
-				  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
-					// Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
-					li.dropdown.dropdown-submenu
-					  a.trigger Boxed
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='portfolio-fixed-3-columns.html') 3 Columns
-						li
-						  a(tabindex='-1', href='portfolio-fixed-4-columns.html') 4 Columns
-						li
-						  a(tabindex='-1', href='portfolio-fluid-boxed.html') Fluid
-					li.dropdown.dropdown-submenu
-					  a.trigger Circle
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='portfolio-fixed-3-columns-circle.html') 3 Columns
-						li
-						  a(tabindex='-1', href='portfolio-fixed-4-columns-circle.html') 4 Columns
-						li
-						  a(tabindex='-1', href='portfolio-fluid-circle.html') Fluid
-					li.dropdown.dropdown-submenu
-					  a.trigger Borderless
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='portfolio-borderless-example.html') Borderless Example
-						li
-						  a(tabindex='-1', href='portfolio-fluid-borderless.html') Fluid
-					li
-					  a(href='portfolio-single-project.html') Single Project
-				li.dropdown.dropdown-main
-				  a.dropdown-toggle(href='#', data-toggle='dropdown')
-					| Shop
-					span.fa.fa-angle-down.dropdown-arrow
-				  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
-					// Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
-					li.dropdown.dropdown-submenu
-					  a.trigger Home Pages
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='shop-home-revolution-slider.html') Revolution Slider
-						li
-						  a(tabindex='-1', href='shop-home-bootstrap-slider.html') Bootstrap Slider
-					li.dropdown.dropdown-submenu
-					  a.trigger Layouts
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='shop-layouts-2col.html') 2 Columns
-						li
-						  a(tabindex='-1', href='shop-layouts-3col.html') 3 Columns
-						li
-						  a(tabindex='-1', href='shop-layouts-4col.html') 4 Columns
-					li.dropdown.dropdown-submenu
-					  a.trigger Checkout
-					  ul.dropdown-menu.animated.fadeIn.dropdown-animation
-						li
-						  a(tabindex='-1', href='shop-checkout-1.html') Step 1: Shipping
-						li
-						  a(tabindex='-1', href='shop-checkout-2.html') Step 2: Payment
-						li
-						  a(tabindex='-1', href='shop-checkout-3.html') Step 3: Review
-					li
-					  a(href='shop-single-product.html') Single Product
-					li
-					  a(href='shop-cart.html') Cart
-				li.dropdown.dropdown-main
-				  a.dropdown-toggle(href='#', data-toggle='dropdown')
-					| Blog
-					span.fa.fa-angle-down.dropdown-arrow
-				  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
-					// Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
-					li
-					  a(href='blog-posts-sidebar-right.html') Sidebar Right
-					li
-					  a(href='blog-posts-sidebar-left.html') Sidebar Left
-					li
-					  a(href='blog-posts-fullwidth.html') Full Width
-					li
-					  a(href='blog-posts-grid.html') Grid
-					li
-					  a(href='blog-single-post.html') Single Post
-				li.dropdown.hidden-sm.hidden-xs
-				  a.ml10.nav-circle-li.dropdown-toggle.dropdown-form-toggle(href='#', data-toggle='dropdown')
-					i.fa.fa-shopping-cart
-				  ul.fadeInUp-animated.dropdown-menu.dropdown-menu-user.cart
-					li#dropdownForm
-					  .dropdown-form
-						table.table.table-hover.no-margin
-						  thead
-							tr
-							  th.quantity QTY
-							  th.product Product
-							  th.amount Subtotal
-						  tbody
-							tr
-							  td.quantity 2 x
-							  td.product
-								a(href='shop-product.html') IPhone 6s
-								span.small 32GB 10.0 Megapixel
-							  td.amount $700.00
-							tr
-							  td.quantity 3 x
-							  td.product
-								a(href='shop-product.html') G10 Macbook Toaster
-								span.small Quad Core 5GB
-							  td.amount $500.00
-							tr
-							  td.quantity 3 x
-							  td.product
-								a(href='shop-product.html') Desktop Seagul
-								span.small 1 Foot Tall - 2FT Wingspan
-							  td.amount $1500.00
-							tr
-							  td.total-quantity(colspan='2') Total 8 Items
-							  td.total-amount $3000.00
-							tr
-							  td.text-right(colspan='3')
-								a(href='shop-cart.html')
-								  button.btn.btn-rw.btn-primary.btn-sm View your cart
-								a(href='shop-checkout-1.html')
-								  button.btn.btn-rw.btn-primary.btn-sm Checkout
-					  // /dropdown form
-					// /dropdownForm list item
-				  // /cart dropdown
-				// /cart navbar list item
-				li.dropdown.hidden-sm.hidden-xs
-				  a.ml10.nav-circle-li.dropdown-toggle.dropdown-form-toggle(href='#', data-toggle='dropdown')
-					i.fa.fa-search
-				  ul.fadeInRight-animated.dropdown-menu.dropdown-menu-user
-					li#dropdownForm
-					  .dropdown-form
-						form.form-default.form-inline.p15
-						  .input-group
-							input.form-control.search-input(type='text', placeholder='Search...')
-							span.input-group-btn
-							  button.btn.btn-rw.btn-primary.search-btn(type='button') Go!
-						// /searh form
+    #fixed-navbar.navbar.navbar-main
+      .container
+        .row
+          .col-sm-12.column-header
+            .navbar-header
+              // Brand
+              a.navbar-brand(href='index.html')
+                .css-logo
+                img.raleway-logo(src='images/logo.png', alt='Raleway Responsive Parallax Bootstrap 3 Template')
+              // Mobile Navigation
+              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navHeaderCollapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            // /navbar header
+            // Main Navigation - Explained in Documentation
+            nav.navbar-collapse.collapse.navHeaderCollapse(role='navigation')
+              ul.nav.navbar-nav.navbar-right
+                li.dropdown.dropdown-main
+                  a.dropdown-toggle(href='index.html', data-hover='dropdown', data-toggle='dropdown')
+                    | Home
+                    span.fa.fa-angle-down.dropdown-arrow
+                  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
+                    // Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
+                    li
+                      a(href='index.html') Option 1: Home
+                    li
+                      a(href='index-home.html') Option 2: aHome
+                    li
+                      a(href='index-home-b.html') Option 3: bHome
+                    li
+                      a(href='index-carousel-subnav.html') Option 4: Carousel Subnav
+                    li
+                      a(href='shop-home-revolution-slider.html') Option 5: Shop Home 1
+                    li
+                      a(href='shop-home-bootstrap-slider.html') Option 6: Shop Home 2
+                    li
+                      a(href='features-navigation-options.html') Navigation Options
+                    li.dropdown.dropdown-submenu
+                      a.trigger Footer Options
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='features-footer-options.html') Dark
+                        li
+                          a(tabindex='-1', href='features-footer-options-2.html') Light
+                li.dropdown.mega-dropdown.dropdown-main
+                  a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | Pages
+                    span.fa.fa-angle-down.dropdown-arrow
+                  ul.dropdown-menu.dropdown-subhover.mega-dropdown-menu.row.dropdown-animation.animated.fadeIn
+                    // Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
+                    li.col-lg-4.hidden-md.hidden-sm.hidden-xs
+                      ul
+                        li.dropdown-header New in Stores
+                        li
+                          img.img-responsive.screen-img.mt10(src='screen.png')
+                    li.col-lg-2.col-md-3.col-sm-6
+                      ul
+                        li.dropdown-header Inform
+                        li
+                          a(href='pages-about-us-1.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  About Page 1
+                        li
+                          a(href='pages-about-us-2.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  About Page 2
+                        li
+                          a(href='pages-about-us-team.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  About us & Team
+                        li
+                          a(href='pages-team-1.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  The Team 1
+                        li
+                          a(href='pages-team-2.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  The Team 2
+                        li
+                          a(href='pages-pricing.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Our Pricing
+                    li.col-lg-2.col-md-3.col-sm-6.mt15-xs
+                      ul
+                        li.dropdown-header Common
+                        li
+                          a(href='pages-services-1.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Service Option 1
+                        li
+                          a(href='pages-services-2.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Service Option 2
+                        li
+                          a(href='pages-404-default.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  404 Default
+                        li
+                          a(href='pages-404-fullscreen.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  404 Fullscreen
+                        li
+                          a(href='pages-forms-register-login.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Register & Login
+                        li
+                          a(href='pages-faq.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Common Questions
+                    li.col-lg-2.col-md-3.col-sm-6.mt15-xs.mt15-sm
+                      ul
+                        li.dropdown-header
+                          | More 
+                          span.ion-plus
+                        li
+                          a(href='pages-sidebar-right.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Page w/ Sidebar Right
+                        li
+                          a(href='pages-sidebar-left.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Page w/ Sidebar Left
+                        li
+                          a(href='pages-menu-right.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Page w/ Menu Right
+                        li
+                          a(href='pages-menu-left.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Page w/ Menu Left
+                        li
+                          a(href='pages-404-default-image.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  404 Default Image
+                        li
+                          a(href='features-navigation-options.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Navigation Options
+                    li.col-lg-2.col-md-3.col-sm-6.mt15-xs.mt15-sm
+                      ul
+                        li.dropdown-header
+                          | More 
+                          span.ion-plus
+                        li
+                          a(href='pages-contact-1.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Contact Page 1
+                        li
+                          a(href='pages-contact-2.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Contact Page 2
+                        li
+                          a(href='pages-timeline.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Company Timeline
+                        li
+                          a(href='pages-user-profile-1.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  User Profile
+                        li
+                          a(href='pages-user-profile-2.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  User Profile 2
+                        li
+                          a(href='pages-freebies.html')
+                            span.fa.fa-angle-right.mega-dropdown-arrow
+                            |  Freebies
+                li.dropdown.dropdown-main
+                  a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | Features
+                    span.fa.fa-angle-down.dropdown-arrow
+                  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
+                    // Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
+                    li.dropdown.dropdown-submenu
+                      a.trigger
+                        strong Components
+                      ul.dropdown-menu.animated.fadeInRight.dropdown-animation
+                        li
+                          a(tabindex='-1', href='features-alerts.html') Alerts
+                        li
+                          a(tabindex='-1', href='features-tabs-accordions.html') Tabs & Accordions
+                        li
+                          a(tabindex='-1', href='features-lists.html') Lists
+                        li
+                          a(tabindex='-1', href='features-thumbnails.html') Thumbnails
+                        li
+                          a(tabindex='-1', href='features-tables.html') Tables
+                        li
+                          a(tabindex='-1', href='features-dividers.html') Dividers
+                        li
+                          a(tabindex='-1', href='features-headings.html') Headings
+                        li
+                          a(tabindex='-1', href='features-progress-bars.html') Progress Bars
+                        li
+                          a(tabindex='-1', href='features-modals.html') Modals
+                        li
+                          a(tabindex='-1', href='features-tooltips-popovers.html') Tooltips & Popovers
+                        li
+                          a(tabindex='-1', href='features-labels-badges.html') Labels & Badges
+                        li
+                          a(tabindex='-1', href='features-forms.html') Forms
+                        li
+                          a(tabindex='-1', href='features-panels.html') Panels
+                    li
+                      a(href='features-typography.html') Typography
+                    li.dropdown.dropdown-submenu
+                      a.trigger Icons
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='features-icons-fontawesome.html') FontAwesome
+                        li
+                          a(tabindex='-1', href='features-icons-ionicons.html') Ionicons
+                        li
+                          a(tabindex='-1', href='features-icons-glyphicons.html') Glyphicons
+                        li
+                          a(tabindex='-1', href='features-icons-raleway.html') Raleway
+                    li.dropdown.dropdown-submenu
+                      a.trigger Buttons
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='features-buttons-basic.html') Basic
+                        li
+                          a(tabindex='-1', href='features-buttons-social.html') Social
+                        li
+                          a(tabindex='-1', href='features-buttons-library.html') Library
+                    li
+                      a(href='features-animations.html') Animations
+                    li
+                      a(href='features-sliders-bootstrap.html') Bootstrap Carousel
+                    li.dropdown.dropdown-submenu
+                      a.trigger Content Boxes
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='features-content-boxes-icon-big.html') Icon Big
+                        li
+                          a(tabindex='-1', href='features-content-boxes-icon-small.html') Icon Small
+                        li
+                          a(tabindex='-1', href='features-content-boxes-icon-left.html') Icon Left Aligned
+                        li
+                          a(tabindex='-1', href='features-content-boxes.html') Boxes
+                    li.dropdown.dropdown-submenu
+                      a.trigger Extras
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='features-recent-projects.html') Recent Projects
+                        li
+                          a(tabindex='-1', href='features-image-video-zoom.html') Image & Video Zoom
+                        li
+                          a(tabindex='-1', href='features-pricing-tables.html') Pricing Tables
+                        li
+                          a(tabindex='-1', href='features-calltoactions.html') Call to Action
+                    li.dropdown.dropdown-submenu
+                      a.trigger Subheader Options
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='features-header-1.html') Default
+                        li
+                          a(tabindex='-1', href='features-header-2.html') Option 2
+                        li
+                          a(tabindex='-1', href='features-header-3.html') Option 3
+                        li
+                          a(tabindex='-1', href='features-header-parallax.html') Parallax
+                    li.dropdown.dropdown-submenu
+                      a.trigger Team Member Options
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='features-team-members-1.html') Option 1
+                        li
+                          a(tabindex='-1', href='features-team-members-2.html') Option 2
+                    li
+                      a(href='features-parallax.html') Parallax
+                    li
+                      a(href='features-columns.html') Columns
+                li.dropdown.dropdown-main
+                  a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | Portfolio
+                    span.fa.fa-angle-down.dropdown-arrow
+                  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
+                    // Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
+                    li.dropdown.dropdown-submenu
+                      a.trigger Boxed
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='portfolio-fixed-3-columns.html') 3 Columns
+                        li
+                          a(tabindex='-1', href='portfolio-fixed-4-columns.html') 4 Columns
+                        li
+                          a(tabindex='-1', href='portfolio-fluid-boxed.html') Fluid
+                    li.dropdown.dropdown-submenu
+                      a.trigger Circle
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='portfolio-fixed-3-columns-circle.html') 3 Columns
+                        li
+                          a(tabindex='-1', href='portfolio-fixed-4-columns-circle.html') 4 Columns
+                        li
+                          a(tabindex='-1', href='portfolio-fluid-circle.html') Fluid
+                    li.dropdown.dropdown-submenu
+                      a.trigger Borderless
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='portfolio-borderless-example.html') Borderless Example
+                        li
+                          a(tabindex='-1', href='portfolio-fluid-borderless.html') Fluid
+                    li
+                      a(href='portfolio-single-project.html') Single Project
+                li.dropdown.dropdown-main
+                  a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | Shop
+                    span.fa.fa-angle-down.dropdown-arrow
+                  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
+                    // Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
+                    li.dropdown.dropdown-submenu
+                      a.trigger Home Pages
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='shop-home-revolution-slider.html') Revolution Slider
+                        li
+                          a(tabindex='-1', href='shop-home-bootstrap-slider.html') Bootstrap Slider
+                    li.dropdown.dropdown-submenu
+                      a.trigger Layouts
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='shop-layouts-2col.html') 2 Columns
+                        li
+                          a(tabindex='-1', href='shop-layouts-3col.html') 3 Columns
+                        li
+                          a(tabindex='-1', href='shop-layouts-4col.html') 4 Columns
+                    li.dropdown.dropdown-submenu
+                      a.trigger Checkout
+                      ul.dropdown-menu.animated.fadeIn.dropdown-animation
+                        li
+                          a(tabindex='-1', href='shop-checkout-1.html') Step 1: Shipping
+                        li
+                          a(tabindex='-1', href='shop-checkout-2.html') Step 2: Payment
+                        li
+                          a(tabindex='-1', href='shop-checkout-3.html') Step 3: Review
+                    li
+                      a(href='shop-single-product.html') Single Product
+                    li
+                      a(href='shop-cart.html') Cart
+                li.dropdown.dropdown-main
+                  a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | Blog
+                    span.fa.fa-angle-down.dropdown-arrow
+                  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
+                    // Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
+                    li
+                      a(href='blog-posts-sidebar-right.html') Sidebar Right
+                    li
+                      a(href='blog-posts-sidebar-left.html') Sidebar Left
+                    li
+                      a(href='blog-posts-fullwidth.html') Full Width
+                    li
+                      a(href='blog-posts-grid.html') Grid
+                    li
+                      a(href='blog-single-post.html') Single Post
+                li.dropdown.hidden-sm.hidden-xs
+                  a.ml10.nav-circle-li.dropdown-toggle.dropdown-form-toggle(href='#', data-toggle='dropdown')
+                    i.fa.fa-shopping-cart
+                  ul.fadeInUp-animated.dropdown-menu.dropdown-menu-user.cart
+                    li#dropdownForm
+                      .dropdown-form
+                        table.table.table-hover.no-margin
+                          thead
+                            tr
+                              th.quantity QTY
+                              th.product Product
+                              th.amount Subtotal
+                          tbody
+                            tr
+                              td.quantity 2 x
+                              td.product
+                                a(href='shop-product.html') IPhone 6s
+                                span.small 32GB 10.0 Megapixel
+                              td.amount $700.00
+                            tr
+                              td.quantity 3 x
+                              td.product
+                                a(href='shop-product.html') G10 Macbook Toaster
+                                span.small Quad Core 5GB
+                              td.amount $500.00
+                            tr
+                              td.quantity 3 x
+                              td.product
+                                a(href='shop-product.html') Desktop Seagul
+                                span.small 1 Foot Tall - 2FT Wingspan
+                              td.amount $1500.00
+                            tr
+                              td.total-quantity(colspan='2') Total 8 Items
+                              td.total-amount $3000.00
+                            tr
+                              td.text-right(colspan='3')
+                                a(href='shop-cart.html')
+                                  button.btn.btn-rw.btn-primary.btn-sm View your cart
+                                a(href='shop-checkout-1.html')
+                                  button.btn.btn-rw.btn-primary.btn-sm Checkout
+                      // /dropdown form
+                    // /dropdownForm list item
+                  // /cart dropdown
+                // /cart navbar list item
+                li.dropdown.hidden-sm.hidden-xs
+                  a.ml10.nav-circle-li.dropdown-toggle.dropdown-form-toggle(href='#', data-toggle='dropdown')
+                    i.fa.fa-search
+                  ul.fadeInRight-animated.dropdown-menu.dropdown-menu-user
+                    li#dropdownForm
+                      .dropdown-form
+                        form.form-default.form-inline.p15
+                          .input-group
+                            input.form-control.search-input(type='text', placeholder='Search...')
+                            span.input-group-btn
+                              button.btn.btn-rw.btn-primary.search-btn(type='button') Go!
+                        // /searh form
 
 

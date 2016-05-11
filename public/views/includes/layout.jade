@@ -5,20 +5,18 @@ html(lang='en')
     meta(name='author', content='Denis Samardjiev')
     meta(name='description', content='1st Choice Business Solutions')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
-    
-	link(href='favicon.ico', rel='shortcut icon', type='image/x-icon')
+
+    link(href='favicon.ico', rel='shortcut icon', type='image/x-icon')
     link(rel='apple-touch-icon', sizes='144x144', href='apple-touch-icon-144x144.png')
     link(rel='apple-touch-icon', sizes='114x114', href='apple-touch-icon-114x114.png')
     link(rel='apple-touch-icon', sizes='72x72', href='apple-touch-icon-72x72.png')
     link(rel='apple-touch-icon', href='apple-touch-icon.png')
     
-	title 1st Choice Solutions
+    title 1st Choice Solutions
     
-	// JS Libraries
     script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
     script(type='text/javascript', src='js/royal_preloader.min.js')
     
-	// Stylesheets
     link(rel='stylesheet', type='text/css', href='css/royal_preloader.css')
     link(rel='stylesheet', type='text/css', href='revolution/css/settings.css')
     link(rel='stylesheet', type='text/css', href='revolution/css/layers.css')
@@ -30,9 +28,8 @@ html(lang='en')
     link(href='css/owl.carousel.css', rel='stylesheet')
     link(href='css/jquery.snippet.css', rel='stylesheet')
     link(href='css/buttons.css', rel='stylesheet')
-    link(href='css/colors/red.css', rel='stylesheet')
-    
-	// Icon Fonts
+    link(href='css/colors/dark-blue.css', rel='stylesheet')
+
     link(href='css/ionicons.min.css', rel='stylesheet', type='text/css')
     link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
     link(href='css/magnific-popup.css', rel='stylesheet', type='text/css')
@@ -40,13 +37,13 @@ html(lang='en')
   body.royal_preloader.scrollreveal
     #royal_preloader
 
-	include header
-	
-	block content
-	
-	include footer
-	
-	 // Javascript Files
+    include header
+    
+    block content
+    
+    include footer
+    
+     // Javascript Files
     script(type='text/javascript', src='js/bootstrap.min.js')
     script(type='text/javascript', src='js/jquery.easing.min.js')
     script(type='text/javascript', src='js/jquery.mixitup.min.js')
@@ -55,7 +52,6 @@ html(lang='en')
     script(type='text/javascript', src='js/jquery.magnific-popup.min.js')
     script(type='text/javascript', src='js/jquery.snippet.min.js')
     script(type='text/javascript', src='js/jquery.fitvids.js')
-    // <script type="text/javascript" src="js/style-switcher.js"></script> Remove for production
     script(type='text/javascript', src='js/activate-snippet.js')
     script(type='text/javascript', src='js/skrollr.min.js')
     // On Scroll Animations - scrollReveal.js
@@ -66,10 +62,10 @@ html(lang='en')
       delay:  'onload'
       }
       window.sr = new scrollReveal( config );
-    // Slider Revolution JS
+
     script(type='text/javascript', src='revolution/js/jquery.themepunch.tools.min.js')
     script(type='text/javascript', src='revolution/js/jquery.themepunch.revolution.min.js')
-    // Slider Revolution Extensions (Load Extensions only on Local File Systems The following part can be removed on Server for On Demand Loading)
+    
     script(type='text/javascript', src='revolution/js/extensions/revolution.extension.actions.min.js')
     script(type='text/javascript', src='revolution/js/extensions/revolution.extension.carousel.min.js')
     script(type='text/javascript', src='revolution/js/extensions/revolution.extension.kenburn.min.js')
@@ -109,7 +105,7 @@ html(lang='en')
       hide_onleave:true,
       hide_delay:200,
       hide_delay_mobile:1200,
-      tmp:'<div class="tp-title-wrap">  	<div class="tp-arr-imgholder"></div>    <div class="tp-arr-img-over"></div>	<span class="tp-arr-titleholder">{{title}}</span> </div>',
+      tmp:'<div class="tp-title-wrap">      <div class="tp-arr-imgholder"></div>    <div class="tp-arr-img-over"></div> <span class="tp-arr-titleholder">{{title}}</span> </div>',
       left: {
       h_align:"left",
       v_align:"center",
@@ -153,4 +149,4 @@ html(lang='en')
       });
       });
 
-	  block javascript
+      block javascript
