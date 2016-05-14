@@ -14,12 +14,11 @@ $.GUI().create('1stchoice', function ($gui) {
 
         load: function () {
 	    $gui.log('loading 1stchoice app');
-	    console.log('loading 1stchoice app ... console');
 
 	    Royal_Preloader.config({
 	        mode: 'number',
 		showProgress: false,
-		background: '#CCCCCC'
+		background: '#000000'
 	    });
 
 	    $gui.timeout(function () {
