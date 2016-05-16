@@ -1,0 +1,96 @@
+
+extends includes/layout
+
+block content
+    section.content-40mg
+      .container
+        // Begin Intro + Video
+        .row
+          .col-sm-12
+            p.lead.text-center.flipInY-animated
+              | The 
+              b
+                mark Ralemasters
+            hr(style='width:600px')
+        .row
+          // Content
+          .col-sm-6.fadeInLeft-animated
+            .heading.mb20
+              h4
+                span.ion-android-developer.mr15.swing-animated
+                | We Are Raleway
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu risus libero. Donec et lorem lacinia, 
+              a.tooltip-active(data-toggle='tooltip', data-placement='top', title='Tooltip on top') adipiscing
+              |  nunc nec, hendrerit sapien. Sed in scelerisque tortor. Praesent porttitor odio non ullamcorper gravida.
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu risus libero. Donec et lorem lacinisent porttitor odio non ullamcorper gravida.
+            // List
+            ul.list-arrow-2-color
+              li
+                small Etiam mollis pharetra adipiscing. Etiam porta in sem vitae suscipit. 
+              li
+                small Consectetur adipiscing elit. Maecenas tempsam suscipit sagittis vestibulum.
+              li
+                small Nulla volutpat aliquam velit
+              li
+                small Faucibus porta lacus fringilla vel
+          // /column
+          // End Content
+          // Video
+          .col-sm-6.responsive-video.mt30-xs.mb15-xs.fadeInRight-animated
+            iframe(src='http://player.vimeo.com/video/69027145', width='500', height='281', style='border: none; border-width: 0px;')
+          // /column
+        // /row
+        // End Intro + Video
+        // Begin What We Do
+        .row.mt20
+          .col-sm-12
+            .heading.mb15
+              h4 What Do We Do?
+          // Content 1
+          .col-sm-4
+            h4
+              span.ion-beaker.bordered-icon-sm.mr15.bounce-animated
+              |  We do parallax.
+            p.no-margin
+              | Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia.
+          // Content 2
+          .col-sm-4.mt20-xs
+            h4
+              span.ion-beer.bordered-icon-sm.mr15.bounce-animated
+              |  We animate.
+            p.no-margin
+              | Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia.
+          // Content 3
+          .col-sm-4.mt20-xs
+            h4
+              span.ion-home.bordered-icon-sm.mr15.bounce-animated
+              |  We like home.
+            p.no-margin
+              | Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia.
+        // End What We Do
+        hr.mt30.mb40
+        // Begin We Are Dedicated
+        .row
+          // Circle Thumbnail
+          .col-sm-2.col-xs-6.hidden-xs(data-sr='enter left over .5s')
+            a.image-zoom-link.thumbnail.br-50(href='images/projects/web3.jpg')
+              img.img-circle.img-responsive(src='images/projects/thumbs/web3.jpg', alt='Thumbnail')
+          // We Are Dedicated
+          .col-sm-10.col-xs-12
+            h4(data-sr='enter right over .5s')
+              | We Are Dedicated! 
+              small.hidden-xs Not once have we had a lad quit.
+            p.lead.mb10(data-sr='enter right over .8s')
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu risus libero. Donec et lorem lacinia, adipiscing nunc nec, hendrerit sapien. Sed in scelerisque tortor.
+            p(data-sr='enter right over 1s')
+              | Praesent porttitor odio non ullamcorper gravida. Donec bibendum risus risus, eu luctus mauris ullamcorper sagittis. Cras pretium pretium ligula, a adipiscing metus facilisis ac. Etiam ut orci a tortor tincidunt sollicitudin. Ut malesuada gravida enim in condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet vulputate arcu, eu pulvinar neque. Aliquam erat volutpat. Aenean euismod nisl sed justo pharetra, et pretium mauris porttitor. Mauris luctus justo eget tempus ornare. Pellentesque vitae sollicitudin ante.
+
+    .cta2.arrow-up
+      .container.text-center
+        h2 I am Raleway, a multi-purpose responsive template.
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc.
+
+

@@ -1,0 +1,249 @@
+
+extends includes/layout
+
+block content
+    .content-40mg
+      .container
+        .row
+          // Begin Content Section
+          section.col-lg-9.col-md-9.col-sm-8
+            // Content 1
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu risus libero. Donec et lorem lacinia, 
+              a.tooltip-active(data-toggle='tooltip', data-placement='top', title='Tooltip on top') adipiscing
+              |  nunc nec, hendrerit sapien. Sed in scelerisque tortor. Maecenas vitae diam fringilla, ultricies eros vel, interdum ligula. Nam in mollis lectus. Aliquam non risus quis arcu consequat pretium. Duis libero neque.
+            // Accordion
+            #accordion.panel-group.mt20.no-margin
+              // Item 1
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
+                      | 1. Aenean sodales erat sit amet quam tincidunt tincidunt?
+                #collapseOne.panel-collapse.collapse.in
+                  .panel-body
+                    img.img-responsive.pull-left.shadow1.mr20(src='images/help.png', style='width:200px;', alt='Help')
+                    p
+                      | Aenean sodales erat sit amet quam tincidunt tincidunt. Sed aliquet mauris sit amet ullamcorper sodales. Nunc leo tortor, laoreet eget quam et, interdum ultrices felis. Cras ultrices, dolor in interdum dapibus, enim nisi pharetra elit, nec hendrerit justo ex sit amet mi. Integer quis sapien ac dolor aliquet ornare sed vel est. Integer ut erat vel nunc sollicitudin accumsan. Nulla nunc elit, auctor et odio sed, placerat egestas elit. Ut suscipit feugiat mauris vel suscipit. Duis pretium quam ut eros laoreet, vitae ultrices turpis gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non nisi eget odio dictum fringilla sed et massa. Curabitur in libero bibendum, hendrerit dolor in, consectetur risus.
+                    p.no-margin
+                      | Quisque vehicula enim nec erat fringilla pharetra. Nulla facilisi. Ut ullamcorper erat sagittis est tincidunt sollicitudin. Sed eros lacus, faucibus faucibus cursus et, dignissim at dolor. Ut suscipit feugiat mauris vel suscipit. Duis pretium qua ut eros laoreet, vitae ultrices turpis gravida. Class aptent taciti sociosqu ad litora.
+              // /panel
+              // Item 2
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo')
+                      | 2. Ut suscipit feugiat mauris vel suscipit?
+                #collapseTwo.panel-collapse.collapse
+                  .panel-body
+                    h4
+                      span.ion-android-hand.bordered-icon-sm.mr15
+                      |  We can really help you with that.
+                    p.no-margin
+                      | Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia. Nam bibendum in mauris at sollicitudin lacinia. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Anim pariatur.
+              // /panel
+              // Item 3
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+                      | 3. Praesent lobortis facilisis dui, dignissim pretium lacus varius ut?
+                #collapseThree.panel-collapse.collapse
+                  .panel-body
+                    p
+                      | Praesent porttitor odio non ullamcorper gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non mattis orci. Praesent at hendrerit massa. 
+                      mark Phasellus egestas convallis semper.
+                      |  Nulla sit amet dictum mauris. Vestibulum eu nisi lorem. Sed viverra massa non purus imperdiet rutrum.
+                    p.lead.no-margin
+                      | Quisque posuere ipsum nec nibh placerat bibendum ac sed neque. Quisque venenatis vestibulum tellus sit amet posuere. In vulputate aliquam odio at condimentum. Vivamus sollicitudin arcu non egestas commodo. Fusce aliquam lectus sed ipsum ullamcorper fringilla ut vel odio.
+              // /panel
+              // Item 4
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseFour')
+                      | 4. Sed a sem id neque accumsan tincidunt?
+                #collapseFour.panel-collapse.collapse
+                  .panel-body
+                    p
+                      | Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia. Nam bibendum in mauris at sollicitudin lacinia. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    h4.mt20
+                      span.ion-android-lightbulb.bordered-icon-xs.mr15
+                      |  We can help with this thing too.
+                    p.no-margin
+                      | Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia. Nam bibendum in mauris at sollicitudin lacinia. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              // /panel
+              // Item 5
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseFive')
+                      | 5. Vivamus blandit dolor tellus, eget sollicitudin elit consectetur ac?
+                #collapseFive.panel-collapse.collapse
+                  .panel-body
+                    p
+                      | Aenean sodales erat sit amet quam tincidunt tincidunt. Sed aliquet mauris sit amet ullamcorper sodales. Nunc leo tortor, laoreet eget quam et, interdum ultrices felis. Cras ultrices, dolor in interdum dapibus, enim nisi pharetra elit, nec hendrerit justo ex sit amet mi. Integer quis sapien ac dolor aliquet ornare sed vel est. Integer ut erat vel nunc sollicitudin accumsan. Nulla nunc elit, auctor et odio sed, placerat egestas elit. Integer pretium aliquam nisi, et semper nunc interdum nec.
+                    p.no-margin
+                      | Ut suscipit feugiat mauris vel suscipit. Duis pretium quam ut eros laoreet, vitae ultrices turpis gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non nisi eget odio dictum fringilla sed et massa. Curabitur in libero bibendum, hendrerit dolor in, consectetur risus. Quisque vehicula enim nec erat fringilla pharetra. Nulla facilisi. Ut ullamcorper erat sagittis est tincidunt sollicitudin. Sed eros lacus, faucibus faucibus cursus et, dignissim at dolor.
+              // /panel
+              // Item 6
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseSix')
+                      | 6. Lorem ipsum dolor sit amet, consectetur adipiscing eli?
+                #collapseSix.panel-collapse.collapse
+                  .panel-body
+                    p
+                      | Aenean sodales erat sit amet quam tincidunt tincidunt. Sed aliquet mauris sit amet ullamcorper sodales. Nunc leo tortor, laoreet eget quam et, interdum ultrices felis. Cras ultrices, dolor in interdum dapibus, enim nisi pharetra elit, nec hendrerit justo ex sit amet mi. Integer quis sapien ac dolor aliquet ornare sed vel est. Integer ut erat vel nunc sollicitudin accumsan. Nulla nunc elit, auctor et odio sed, placerat egestas elit. Integer pretium aliquam nisi, et semper nunc interdum nec.
+                    p.no-margin
+                      | Ut suscipit feugiat mauris vel suscipit. Duis pretium quam ut eros laoreet, vitae ultrices turpis gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non nisi eget odio dictum fringilla sed et massa. Curabitur in libero bibendum, hendrerit dolor in, consectetur risus. Quisque vehicula enim nec erat fringilla pharetra. Nulla facilisi. Ut ullamcorper erat sagittis est tincidunt sollicitudin. Sed eros lacus, faucibus faucibus cursus et, dignissim at dolor.
+              // /panel
+              // Item 7
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseSeven')
+                      | 7. Nunc placerat ex sem?
+                #collapseSeven.panel-collapse.collapse
+                  .panel-body
+                    p
+                      | Aenean sodales erat sit amet quam tincidunt tincidunt. Sed aliquet mauris sit amet ullamcorper sodales. Nunc leo tortor, laoreet eget quam et, interdum ultrices felis. Cras ultrices, dolor in interdum dapibus, enim nisi pharetra elit, nec hendrerit justo ex sit amet mi. Integer quis sapien ac dolor aliquet ornare sed vel est. Integer ut erat vel nunc sollicitudin accumsan. Nulla nunc elit, auctor et odio sed, placerat egestas elit. Integer pretium aliquam nisi, et semper nunc interdum nec.
+                    p.no-margin
+                      | Ut suscipit feugiat mauris vel suscipit. Duis pretium quam ut eros laoreet, vitae ultrices turpis gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non nisi eget odio dictum fringilla sed et massa. Curabitur in libero bibendum, hendrerit dolor in, consectetur risus. Quisque vehicula enim nec erat fringilla pharetra. Nulla facilisi. Ut ullamcorper erat sagittis est tincidunt sollicitudin. Sed eros lacus, faucibus faucibus cursus et, dignissim at dolor.
+              // /panel
+              // Item 8
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseEight')
+                      | 8. Ut tempor diam dui, sed maximus purus feugiat et?
+                #collapseEight.panel-collapse.collapse
+                  .panel-body
+                    p
+                      | Aenean sodales erat sit amet quam tincidunt tincidunt. Sed aliquet mauris sit amet ullamcorper sodales. Nunc leo tortor, laoreet eget quam et, interdum ultrices felis. Cras ultrices, dolor in interdum dapibus, enim nisi pharetra elit, nec hendrerit justo ex sit amet mi. Integer quis sapien ac dolor aliquet ornare sed vel est. Integer ut erat vel nunc sollicitudin accumsan. Nulla nunc elit, auctor et odio sed, placerat egestas elit. Integer pretium aliquam nisi, et semper nunc interdum nec.
+                    p.no-margin
+                      | Ut suscipit feugiat mauris vel suscipit. Duis pretium quam ut eros laoreet, vitae ultrices turpis gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non nisi eget odio dictum fringilla sed et massa. Curabitur in libero bibendum, hendrerit dolor in, consectetur risus. Quisque vehicula enim nec erat fringilla pharetra. Nulla facilisi. Ut ullamcorper erat sagittis est tincidunt sollicitudin. Sed eros lacus, faucibus faucibus cursus et, dignissim at dolor.
+              // /panel
+              // Item 9
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseNine')
+                      | 9.  Maecenas non pretium metus, nec venenatis nisi?
+                #collapseNine.panel-collapse.collapse
+                  .panel-body
+                    p
+                      | Aenean sodales erat sit amet quam tincidunt tincidunt. Sed aliquet mauris sit amet ullamcorper sodales. Nunc leo tortor, laoreet eget quam et, interdum ultrices felis. Cras ultrices, dolor in interdum dapibus, enim nisi pharetra elit, nec hendrerit justo ex sit amet mi. Integer quis sapien ac dolor aliquet ornare sed vel est. Integer ut erat vel nunc sollicitudin accumsan. Nulla nunc elit, auctor et odio sed, placerat egestas elit. Integer pretium aliquam nisi, et semper nunc interdum nec.
+                    p.no-margin
+                      | Ut suscipit feugiat mauris vel suscipit. Duis pretium quam ut eros laoreet, vitae ultrices turpis gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non nisi eget odio dictum fringilla sed et massa. Curabitur in libero bibendum, hendrerit dolor in, consectetur risus. Quisque vehicula enim nec erat fringilla pharetra. Nulla facilisi. Ut ullamcorper erat sagittis est tincidunt sollicitudin. Sed eros lacus, faucibus faucibus cursus et, dignissim at dolor.
+              // /panel
+              // Item 10
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseTen')
+                      | 10. Nunc placerat ex sem?
+                #collapseTen.panel-collapse.collapse
+                  .panel-body
+                    p
+                      | Aenean sodales erat sit amet quam tincidunt tincidunt. Sed aliquet mauris sit amet ullamcorper sodales. Nunc leo tortor, laoreet eget quam et, interdum ultrices felis. Cras ultrices, dolor in interdum dapibus, enim nisi pharetra elit, nec hendrerit justo ex sit amet mi. Integer quis sapien ac dolor aliquet ornare sed vel est. Integer ut erat vel nunc sollicitudin accumsan. Nulla nunc elit, auctor et odio sed, placerat egestas elit. Integer pretium aliquam nisi, et semper nunc interdum nec.
+                    p.no-margin
+                      | Ut suscipit feugiat mauris vel suscipit. Duis pretium quam ut eros laoreet, vitae ultrices turpis gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non nisi eget odio dictum fringilla sed et massa. Curabitur in libero bibendum, hendrerit dolor in, consectetur risus. Quisque vehicula enim nec erat fringilla pharetra. Nulla facilisi. Ut ullamcorper erat sagittis est tincidunt sollicitudin. Sed eros lacus, faucibus faucibus cursus et, dignissim at dolor.
+              // /panel
+              // Item 11
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseEleven')
+                      | 11. Ut tempor diam dui, sed maximus purus feugiat et?
+                #collapseEleven.panel-collapse.collapse
+                  .panel-body
+                    p
+                      | Aenean sodales erat sit amet quam tincidunt tincidunt. Sed aliquet mauris sit amet ullamcorper sodales. Nunc leo tortor, laoreet eget quam et, interdum ultrices felis. Cras ultrices, dolor in interdum dapibus, enim nisi pharetra elit, nec hendrerit justo ex sit amet mi. Integer quis sapien ac dolor aliquet ornare sed vel est. Integer ut erat vel nunc sollicitudin accumsan. Nulla nunc elit, auctor et odio sed, placerat egestas elit. Integer pretium aliquam nisi, et semper nunc interdum nec.
+                    p.no-margin
+                      | Ut suscipit feugiat mauris vel suscipit. Duis pretium quam ut eros laoreet, vitae ultrices turpis gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non nisi eget odio dictum fringilla sed et massa. Curabitur in libero bibendum, hendrerit dolor in, consectetur risus. Quisque vehicula enim nec erat fringilla pharetra. Nulla facilisi. Ut ullamcorper erat sagittis est tincidunt sollicitudin. Sed eros lacus, faucibus faucibus cursus et, dignissim at dolor.
+              // /panel
+              // Item 12
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwelve')
+                      | 12.  Ut a magna orci?
+                #collapseTwelve.panel-collapse.collapse
+                  .panel-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Anim pariatur.
+
+          aside.col-lg-3.col-md-3.col-sm-4.mt30-xs
+            nav(role='navigation')
+              .content-box.content-box-primary.mb30
+                span.ion-help.text-white.bordered-icon-static-xs
+                h2.pt15.text-white 702-423-1315
+                small.p15xs.no-margin.text-white Lorem ipsum dolor sit amet, consec tetur adipiscing elit.
+              .heading.mb20
+                h4 About
+              p.mb30
+                | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              // Nav tabs
+              ul.nav.nav-tabs(role='tablist')
+                li.active
+                  a(href='#pages', role='tab', data-toggle='tab') Pages
+                li
+                  a(href='#info', role='tab', data-toggle='tab') Info
+              .tab-content.tab-default.mb30
+                #pages.tab-pane.in.active
+                  ul.list-arrow.no-margin
+                    li
+                      a(href='index.html') Home
+                    li
+                      a(href='pages-about-us-team.html') About Team
+                    li
+                      a(href='pages-services-2.html') Services
+                    li
+                      a(href='pages-register-login.html') Create an account
+                    li
+                      a(href='pages-faq.html') More Info
+                    li
+                      a(href='pages-about-us-2.html') About Company
+                    li
+                      a(href='pages-404.html') Error
+                    li
+                      a(href='portfolio-fixed-4-columns-circle.html') Portfolio
+                    li
+                      a(href='pages-team-1.html') The Team
+                #info.tab-pane
+                  | Donec tristique dignissim nisi, quis fermentum quam. Sed turpis ipsum, tempor vel malesuada ac, pharetra eu nunc. Aliquam condimentum mauris eget justo aliquam, in rhoncus libero egestas.
+                  a.btn.btn-rw.btn-primary.btn-sm.mt10(href='pages-about-1.html') About
+              // End Nav tabs
+              .heading.mb20
+                h4 Menu
+              ul#sidebar-nav.sidebar-nav.list-group.no-margin
+                li.list-group-item.no-padding
+                  a(href='#') Praesent porttitor odio non
+                li.list-group-item
+                  a(href='#')  Lorem ipsum dolor sit amet
+                li.list-group-item
+                  a(href='#') Vestibulum eu nisi
+                li.list-group-item.list-toggle
+                  // "active" must also be included for active states to work correctly on the sidebar menu
+                  a(data-toggle='collapse', data-parent='#sidebar-nav', href='#collapse-1') Collapse Item
+                  ul#collapse-1.collapse
+                    // "in" must also be included
+                    li
+                      a(href='#')
+                        i.fa.fa-angle-right
+                        |  Item 1
+                    li
+                      a(href='#')
+                        i.fa.fa-angle-right
+                        |  Item 2
+                    li
+                      a(href='#')
+                        i.fa.fa-angle-right
+                        |  Item 3
+                    li
+                      a(href='#')
+                        i.fa.fa-angle-right
+                        |  Item 4
+
+

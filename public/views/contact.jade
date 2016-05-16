@@ -1,0 +1,53 @@
+
+extends includes/layout
+
+block content
+  .container-fluid
+    .row
+      .col-xs-12.no-padding(style='margin-bottom: -7px;')
+        iframe(style='border: 0px none; border-color:#fff; width:100%;', height='350', src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96673.67264846916!2d-73.965355!3d40.782865!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb9df1f7387a94119!2sCentral+Park!5e0!3m2!1sen!2sus!4v1426388399344')
+
+    section.mt40.mb40
+      .container
+        .row
+          .col-sm-8
+            .heading.mb20
+              h4
+                span.ion-android-mail.mr15
+                | Send us a Message
+            p.mb20
+              | Aenean sodales erat sit amet quam tincidunt tincidunt. Sed aliquet 
+              b mauris sit amet ullamcorper
+              |  sodales.
+            form(role='form')
+              .form-group
+                input#InputName.form-control(type='email', placeholder='Name')
+              .form-group
+                input#InputEmail1.form-control(type='email', placeholder='Email Address')
+              .form-group
+                textarea#InputMessage.form-control(placeholder='Message', rows='7')
+              button.btn.btn-rw.btn-primary(type='submit') Submit
+          .col-sm-4.mt30-xs
+            .content-box.content-box-primary.mb30
+              span.ion-ios7-telephone-outline.text-white.border-white.bordered-icon-static-sm.mb10
+              h2.text-white.no-margin 702-423-1315
+            .panel.panel-primary.no-margin
+              .panel-heading
+                h3.panel-title
+                  span.ion-android-system-home
+                  |  Information
+              .panel-body
+                address.no-margin
+                  strong Raleway, Inc.
+                  br
+                  | 			                            702 Goose Down Ave, Suite 1
+                  br
+                  | 			                            Malibu, CA 93217
+                  br
+                  abbr(title='Phone') P:
+                  |  (123) 456-7890 
+                  br
+                  | 			                            Mail: 
+                  a(href='#') support@raleway.com
+
+
