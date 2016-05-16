@@ -45,55 +45,34 @@ header
               label
                 input(type='checkbox')
                 |  Do you flex?
-          // /form
         .modal-footer
           button.btn.btn-rw.btn-primary(type='button') Login
-      // /modal content
-    // /modal dialog
-  // /modal holder
-  // End Login
-  // Begin Navigation
+
   .navbar-wrapper
     #fixed-navbar.navbar.navbar-main
       .container
         .row
           .col-sm-12.column-header
             .navbar-header
-              // Brand
-              a.navbar-brand(href='index.html')
-                .css-logo
-                img.raleway-logo(src='images/logo.png', alt='Raleway Responsive Parallax Bootstrap 3 Template')
-              // Mobile Navigation
+              a.navbar-brand(href='/') 1st Choice Business Solutions 
+                //.css-logo
               button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navHeaderCollapse')
                 span.sr-only Toggle navigation
                 span.icon-bar
                 span.icon-bar
                 span.icon-bar
-            // /navbar header
-            // Main Navigation - Explained in Documentation
             nav.navbar-collapse.collapse.navHeaderCollapse(role='navigation')
               ul.nav.navbar-nav.navbar-right
                 li.dropdown.dropdown-main
-                  a.dropdown-toggle(href='index.html', data-hover='dropdown', data-toggle='dropdown')
+                  a.dropdown-toggle(href='/', data-hover='dropdown', data-toggle='dropdown')
                     | Home
                     span.fa.fa-angle-down.dropdown-arrow
                   ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
-                    // Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
                     li
-                      a(href='index.html') Option 1: Home
+                      a(href='/') Home
                     li
-                      a(href='index-home.html') Option 2: aHome
-                    li
-                      a(href='index-home-b.html') Option 3: bHome
-                    li
-                      a(href='index-carousel-subnav.html') Option 4: Carousel Subnav
-                    li
-                      a(href='shop-home-revolution-slider.html') Option 5: Shop Home 1
-                    li
-                      a(href='shop-home-bootstrap-slider.html') Option 6: Shop Home 2
-                    li
-                      a(href='features-navigation-options.html') Navigation Options
-                    li.dropdown.dropdown-submenu
+                      a(href='#') Navigation Options
+                    //-li.dropdown.dropdown-submenu
                       a.trigger Footer Options
                       ul.dropdown-menu.animated.fadeIn.dropdown-animation
                         li
@@ -101,11 +80,10 @@ header
                         li
                           a(tabindex='-1', href='features-footer-options-2.html') Light
                 li.dropdown.mega-dropdown.dropdown-main
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Pages
-                    span.fa.fa-angle-down.dropdown-arrow
-                  ul.dropdown-menu.dropdown-subhover.mega-dropdown-menu.row.dropdown-animation.animated.fadeIn
-                    // Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
+                  a.dropdown-toggle(href='/about')
+                    | How It Works 
+                    //-span.fa.fa-angle-down.dropdown-arrow
+                  //-ul.dropdown-menu.dropdown-subhover.mega-dropdown-menu.row.dropdown-animation.animated.fadeIn
                     li.col-lg-4.hidden-md.hidden-sm.hidden-xs
                       ul
                         li.dropdown-header New in Stores
@@ -223,12 +201,11 @@ header
                           a(href='pages-freebies.html')
                             span.fa.fa-angle-right.mega-dropdown-arrow
                             |  Freebies
-                li.dropdown.dropdown-main
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Features
-                    span.fa.fa-angle-down.dropdown-arrow
-                  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
-                    // Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
+                li
+                  a(href='/packages')
+                    | Packages 
+                    //-span.fa.fa-angle-down.dropdown-arrow
+                  //-ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
                     li.dropdown.dropdown-submenu
                       a.trigger
                         strong Components
@@ -330,11 +307,10 @@ header
                     li
                       a(href='features-columns.html') Columns
                 li.dropdown.dropdown-main
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Portfolio
-                    span.fa.fa-angle-down.dropdown-arrow
-                  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
-                    // Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
+                  a.dropdown-toggle(href='/order')
+                    | Order 
+                    //-span.fa.fa-angle-down.dropdown-arrow
+                  //-ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
                     li.dropdown.dropdown-submenu
                       a.trigger Boxed
                       ul.dropdown-menu.animated.fadeIn.dropdown-animation
@@ -363,11 +339,10 @@ header
                     li
                       a(href='portfolio-single-project.html') Single Project
                 li.dropdown.dropdown-main
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Shop
-                    span.fa.fa-angle-down.dropdown-arrow
-                  ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
-                    // Control Animations by changing "fadeIn" to another property from animate.css, check animations page in features / ALSO dropdown-animation class controls the duration, ajust if need
+                  a.dropdown-toggle(href='/contact')
+                    | Contact 
+                    //-span.fa.fa-angle-down.dropdown-arrow
+                  //-ul.dropdown-menu.dropdown-subhover.dropdown-animation.animated.fadeIn
                     li.dropdown.dropdown-submenu
                       a.trigger Home Pages
                       ul.dropdown-menu.animated.fadeIn.dropdown-animation
@@ -397,7 +372,7 @@ header
                       a(href='shop-single-product.html') Single Product
                     li
                       a(href='shop-cart.html') Cart
-                li.dropdown.dropdown-main
+                //-li.dropdown.dropdown-main
                   a.dropdown-toggle(href='#', data-toggle='dropdown')
                     | Blog
                     span.fa.fa-angle-down.dropdown-arrow
@@ -413,50 +388,7 @@ header
                       a(href='blog-posts-grid.html') Grid
                     li
                       a(href='blog-single-post.html') Single Post
-                li.dropdown.hidden-sm.hidden-xs
-                  a.ml10.nav-circle-li.dropdown-toggle.dropdown-form-toggle(href='#', data-toggle='dropdown')
-                    i.fa.fa-shopping-cart
-                  ul.fadeInUp-animated.dropdown-menu.dropdown-menu-user.cart
-                    li#dropdownForm
-                      .dropdown-form
-                        table.table.table-hover.no-margin
-                          thead
-                            tr
-                              th.quantity QTY
-                              th.product Product
-                              th.amount Subtotal
-                          tbody
-                            tr
-                              td.quantity 2 x
-                              td.product
-                                a(href='shop-product.html') IPhone 6s
-                                span.small 32GB 10.0 Megapixel
-                              td.amount $700.00
-                            tr
-                              td.quantity 3 x
-                              td.product
-                                a(href='shop-product.html') G10 Macbook Toaster
-                                span.small Quad Core 5GB
-                              td.amount $500.00
-                            tr
-                              td.quantity 3 x
-                              td.product
-                                a(href='shop-product.html') Desktop Seagul
-                                span.small 1 Foot Tall - 2FT Wingspan
-                              td.amount $1500.00
-                            tr
-                              td.total-quantity(colspan='2') Total 8 Items
-                              td.total-amount $3000.00
-                            tr
-                              td.text-right(colspan='3')
-                                a(href='shop-cart.html')
-                                  button.btn.btn-rw.btn-primary.btn-sm View your cart
-                                a(href='shop-checkout-1.html')
-                                  button.btn.btn-rw.btn-primary.btn-sm Checkout
-                      // /dropdown form
-                    // /dropdownForm list item
-                  // /cart dropdown
-                // /cart navbar list item
+
                 li.dropdown.hidden-sm.hidden-xs
                   a.ml10.nav-circle-li.dropdown-toggle.dropdown-form-toggle(href='#', data-toggle='dropdown')
                     i.fa.fa-search
@@ -468,6 +400,5 @@ header
                             input.form-control.search-input(type='text', placeholder='Search...')
                             span.input-group-btn
                               button.btn.btn-rw.btn-primary.search-btn(type='button') Go!
-                        // /searh form
 
 
