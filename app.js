@@ -2,7 +2,7 @@
  *                               *
  * Main Application Script       *
  * ----------------------------- */
-var app, routes, users;
+var app, routes, server;
 
 var express = require('express'),
     path = require('path'),
@@ -12,7 +12,6 @@ var express = require('express'),
     bodyParser = require('body-parser');
 
 routes = require('./routes');
-//users = require('./routes/users');
 
 app = express();
 
@@ -30,48 +29,18 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 routes.add(app);
 
-var server = app.listen(5000, function () {
-    var host, port;
-
-    host = server.address().address;
-    port = server.address().port;
-
-    console.log('1stchoice solutions listening at http://%s:%s', host, port); 
-
-});
-
-// Make our db accessible to our router
-/*
-app.use(function (req, res, next) {
-
-    //req.db = db;
-
-    next();
-
-});
-*/
-
-// app.use('/', routes);
-// app.use('/users', users);
-
-
-/// catch 404 and forwarding to error handler
-/*
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
 
     err.status = 404;
 
     next(err);
-
 });
 
-// development error handler
-/*
 if (app.get('env') === 'development') {
-
+    
     app.use(function (err, req, res, next) {
-
+    
         res.status(err.status || 500);
         res.render('404', {
             message: err.message,
@@ -82,14 +51,25 @@ if (app.get('env') === 'development') {
 
 }
 
-// production error handler
 app.use(function (err, req, res, next) {
 
-    res.status(err.status || 500);
-    res.render('404', {
-        message: err.message,
-        error: {}
+    app.use(function (err, req, res, next) {
+    
+        res.status(err.status || 500);
+        res.render('404', {
+            message: err.message,
+            error: {} 
+        });
+
     });
 
 });
-*/
+
+server = app.listen(5000, function () {
+    var host, port;
+
+    host = server.address().address;
+    port = server.address().port;
+
+    console.log('1stchoice solutions listening at http://%s:%s', host, port); 
+});
