@@ -65,7 +65,7 @@ app.use(function (err, req, res, next) {
 
 });
 
-server = app.listen(5000, function () {
+server = app.listen(5000, '0.0.0.0', function () {
     var host, port;
 
     host = server.address().address;
